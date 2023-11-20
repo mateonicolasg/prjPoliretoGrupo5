@@ -17,7 +17,6 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
 
-<<<<<<< HEAD
 
 # POLIRETO I
 
@@ -54,6 +53,4 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 ###
     S12: 2  6   12  20  36  42  56  72  ...
 
-=======
 # Texto de prueba 
->>>>>>> 75779f1aebd7eacfc5a98fa5fdc714609ca7f3b9
