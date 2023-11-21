@@ -12,7 +12,7 @@
 
         
         public void TorresSerie4For(int numSerie){
-            int n1=0,n2=1,temp=4;
+            int numerador1=0,numerador2=1,denominadorpar=4;
             switch(numSerie){
                 case 1:
                         System.out.print("0/2 ");
@@ -23,18 +23,18 @@
                 default:
                 System.out.print("0/2 "+"1/4 ");
                     for(int i=0;i<numSerie-2;i++){
-                            int n3=n1+n2;
-                            temp+=2;
-                            System.out.print(n3+"/"+temp+" ");
-                            n1=n2;
-                            n2=n3;
+                            int numarador3=numerador1+numerador2;
+                            denominadorpar+=2;
+                            System.out.print(numarador3+"/"+denominadorpar+" ");
+                            numerador1=numerador2;
+                            numerador2=numarador3;
                     }
                 break;
             }
         }
         public void TorresSerie4while(int numSerie){
 
-            int n1=0,n2=1,temp=4;
+            int numerador1=0,numerador2=1,denominadorpar=4;
             switch(numSerie){
                 case 1:
                         System.out.print("0/2 ");
@@ -45,19 +45,19 @@
                 default:
                 System.out.print("0/2 "+"1/4 ");
                     int i=0;
-                    while (++i<=numSerie-2) {
-                        int n3=n1+n2;
-                            temp+=2;
-                            System.out.print(n3+"/"+temp+" ");
-                            n1=n2;
-                            n2=n3;
+                    while (i++<numSerie-2) {
+                        int numarador3=numerador1+numerador2;
+                            denominadorpar+=2;
+                            System.out.print(numarador3+"/"+denominadorpar+" ");
+                            numerador1=numerador2;
+                            numerador2=numarador3;
                     }
                 break;
             }
         }
         public void TorresSerie4Dowhile(int numSerie){
 
-            int n1=0,n2=1,temp=4;
+            int numerador1=0,numerador2=1,denominadorpar=4;
             switch(numSerie){
                 case 1:
                         System.out.print("0/2 ");
@@ -69,11 +69,11 @@
                 System.out.print("0/2 "+"1/4 ");
                     int i=0;
                     do {
-                        int n3=n1+n2;
-                            temp+=2;
-                            System.out.print(n3+"/"+temp+" ");
-                            n1=n2;
-                            n2=n3;
+                        int numarador3=numerador1+numerador2;
+                            denominadorpar+=2;
+                            System.out.print(numarador3+"/"+denominadorpar+" ");
+                            numerador1=numerador2;
+                            numerador2=numarador3;
                     } while (++i<numSerie-2);
                 break;
             }
