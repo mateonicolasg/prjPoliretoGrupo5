@@ -17,5 +17,7 @@ public class App {
         oSerieNumeros12.showSerieWhile(Nrotermino);
         System.out.println();
         oSerieNumeros12.showSerieDowhile(Nrotermino);
+
+        sc.close();
     }
 }
