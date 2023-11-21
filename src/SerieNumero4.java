@@ -11,7 +11,7 @@
   public class SerieNumero4{
 
         
-        public void TorresSerie4(int numSerie){
+        public void TorresSerie4For(int numSerie){
             int n1=0,n2=1,temp=4;
             switch(numSerie){
                 case 1:
@@ -31,9 +31,55 @@
                     }
                 break;
             }
-                
-
-            
-
         }
-  }
+        public void TorresSerie4while(int numSerie){
+
+            int n1=0,n2=1,temp=4;
+            switch(numSerie){
+                case 1:
+                        System.out.print("0/2 ");
+                break;
+                case 2:
+                        System.out.print("0/2 "+"1/4 ");
+                break;
+                default:
+                System.out.print("0/2 "+"1/4 ");
+                    int i=0;
+                    while (++i<=numSerie-2) {
+                        int n3=n1+n2;
+                            temp+=2;
+                            System.out.print(n3+"/"+temp+" ");
+                            n1=n2;
+                            n2=n3;
+                    }
+                break;
+            }
+        }
+        public void TorresSerie4Dowhile(int numSerie){
+
+            int n1=0,n2=1,temp=4;
+            switch(numSerie){
+                case 1:
+                        System.out.print("0/2 ");
+                break;
+                case 2:
+                        System.out.print("0/2 "+"1/4 ");
+                break;
+                default:
+                System.out.print("0/2 "+"1/4 ");
+                    int i=0;
+                    do {
+                        int n3=n1+n2;
+                            temp+=2;
+                            System.out.print(n3+"/"+temp+" ");
+                            n1=n2;
+                            n2=n3;
+                    } while (++i<numSerie-2);
+                break;
+            }
+        }
+            
+    }
+    
+    
+        

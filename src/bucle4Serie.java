@@ -16,7 +16,11 @@ public class bucle4Serie{
             SerieNumero4 serieCuatro = new SerieNumero4();
             System.out.println("Ingrese un numero:");
             int numSerie=scanner.nextInt();
-            serieCuatro.TorresSerie4(numSerie);
+            serieCuatro.TorresSerie4For(numSerie);
+            System.out.println();
+            serieCuatro.TorresSerie4while(numSerie);
+            System.out.println();
+            serieCuatro.TorresSerie4Dowhile(numSerie);
 
     }
     }
