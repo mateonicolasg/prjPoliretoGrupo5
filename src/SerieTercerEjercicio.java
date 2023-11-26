@@ -13,24 +13,22 @@ public class SerieTercerEjercicio {
     private int[] numeradores;
     private int[] denominadores;
 
-    public void generarSerie(int numeroTerminos) {
+    public void generarSerie(int nroTerminos) {
 
-        numeradores = new int[numeroTerminos];
-        denominadores = new int[numeroTerminos];
+        numeradores = new int[nroTerminos];
+        denominadores = new int[nroTerminos];
 
         numeradores[0] = 0;
         numeradores[1] = 1;
         denominadores[0] = 1;
         denominadores[1] = 3;
-        for (int i = 2; i < numeroTerminos; i++) {
+        for (int i = 2; i < nroTerminos; i++) {
             numeradores[i] = numeradores[i - 1] + numeradores[i - 2];
             denominadores[i] = denominadores[i - 1] + 2;
         }
     }
 
     public void mostrarSerie() {
-        System.out.println("La serie es: ");
-
         for (int i = 0; i < numeradores.length; i++) {
             System.out.print(numeradores[i] + "/" + denominadores[i] + "  ");
         }
