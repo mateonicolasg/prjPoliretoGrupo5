@@ -11,16 +11,23 @@
  */
 
 public class MateoGrupo5 {
+
+    private int primerFactor, segundoFactor;
+
+    public MateoGrupo5 (){
+        this.primerFactor = 2;
+        this.segundoFactor = 1;
+    }
     /**
-     * <b>showSerie</b> muestra la serie usando el ciclo for S12: 2  6   12  20  30  42  56  72  ...
+     * <b>showSerieFor</b> muestra la serie usando el ciclo for S12: 2  6   12  20  30  42  56  72  ...
      * @param nroTerminos: numero de terminos para la serie
      * showSerieFor 
      */
 
     public void showSerieFor(int nroTerminos){
-        int primerFactor, segundoFactor;
-        primerFactor = 2;
-        segundoFactor = 1;
+        // int primerFactor, segundoFactor;
+        // primerFactor = 2;
+        // segundoFactor = 1;
         for (int i = 0; i < nroTerminos; i++) 
             System.out.print(((primerFactor++)*(segundoFactor++)) + " ");
             // primerFactor++;
@@ -28,13 +35,13 @@ public class MateoGrupo5 {
      }
 
     /**
-     * <b>showSerie</b> muestra la serie usando el ciclo while S12: 2  6   12  20  30  42  56  72  ...
+     * <b>showSerieWhile</b> muestra la serie usando el ciclo while S12: 2  6   12  20  30  42  56  72  ...
      * @param nroTerminos: numero de terminos para la serie
      * showSerieWhile 
      */
 
     public void showSerieWhile(int nroTerminos){
-        int primerFactor, segundoFactor;
+        // int primerFactor, segundoFactor;
         primerFactor = 2;
         segundoFactor = 1;
         while ((nroTerminos--) > 0)
@@ -45,12 +52,12 @@ public class MateoGrupo5 {
      }
 
     /**
-     * <b>showSerie</b> muestra la serie usando el ciclo do-while S12: 2  6   12  20  30  42  56  72  ...
+     * <b>showSerieDowhile</b> muestra la serie usando el ciclo do-while S12: 2  6   12  20  30  42  56  72  ...
      * @param nroTerminos: numero de terminos para la serie
      * showSerieDoWhile 
      */
     public void showSerieDowhile(int nroTerminos){
-        int primerFactor,segundoFactor;
+        // int primerFactor,segundoFactor;
         primerFactor = 2;
         segundoFactor = 1;
         do
