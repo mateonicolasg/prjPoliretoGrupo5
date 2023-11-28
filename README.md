@@ -51,5 +51,5 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 
     S10: 3, 9, 27, 81, 243, 729, 2187, ...
 ### Mateo Simbaña
-    S12: 2  6   12  20  36  42  56  72  ...      SerieNumerosAlternos
+    S12: 2  6   12  20  36  42  56  72  ...  SerieNumeros12
 
