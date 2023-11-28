@@ -16,7 +16,17 @@ public class App {
         System.out.println("S3: ");
         SerieTercerEjercicio.generarSerie(nroTerminos);
         SerieTercerEjercicio.mostrarSerie();
-
+        
+        //Francisco Torres
+        SerieNumero4 serieCuatro = new SerieNumero4();
+            System.out.println();
+            System.out.println("S4: ");
+            serieCuatro.TorresSerie4For(nroTerminos);
+            System.out.println();
+            serieCuatro.TorresSerie4while(nroTerminos);
+            System.out.println();
+            serieCuatro.TorresSerie4Dowhile(nroTerminos);
+            
         // Mateo Simbaña
         System.out.println();
         System.out.println("S12: ");
@@ -25,6 +35,7 @@ public class App {
         oSerieNumeros12.showSerieWhile(nroTerminos);
         System.out.println();
         oSerieNumeros12.showSerieDowhile(nroTerminos);
+
         
         sc.close();
     }
