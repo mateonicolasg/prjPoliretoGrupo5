@@ -18,7 +18,7 @@ public class App {
         SerieTercerEjercicio.mostrarSerie();
         
         //Francisco Torres
-        SerieNumero4 serieCuatro = new SerieNumero4();
+            SerieNumero4 serieCuatro = new SerieNumero4();
             System.out.println();
             System.out.println("S4: ");
             serieCuatro.TorresSerie4For(nroTerminos);
@@ -26,7 +26,7 @@ public class App {
             serieCuatro.TorresSerie4while(nroTerminos);
             System.out.println();
             serieCuatro.TorresSerie4Dowhile(nroTerminos);
-            
+
         // Mateo Simbaña
         System.out.println();
         System.out.println("S12: ");
