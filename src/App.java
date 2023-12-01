@@ -7,6 +7,7 @@ public class App {
         SerieTercerEjercicio SerieTercerEjercicio = new SerieTercerEjercicio();
 
         SerieCaracteres1 oSerieCaracteres1 = new SerieCaracteres1();
+        SerieCaracteres2 oSerieCaracteres2 = new SerieCaracteres2();
         SerieCaracteres6 oSerieCaracteres6 = new SerieCaracteres6();
 
         System.out.println("GRUPO: ");        
@@ -51,12 +52,22 @@ public class App {
         oSerieCaracteres1.showSerieWhile(nroTerminos);
 
         System.out.println();
+        System.out.println("S2: ");
+        oSerieCaracteres2.showSerieFor(nroTerminos);
+        // System.out.println();
+        // System.out.println("S5: ");
+        // oSerieCaracteres5.showSerieFor(nroTerminos);
+        // System.out.println();
+
+        System.out.println();
         System.out.println("S6: ");
         oSerieCaracteres6.showSerieFor(nroTerminos);
         System.out.println();
         oSerieCaracteres6.showSerieDowhile(nroTerminos);
         System.out.println();
         oSerieCaracteres6.showSerieWhile(nroTerminos);
+
+
         sc.close();
     }
 }
