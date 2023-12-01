@@ -42,7 +42,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 
 >> Series de caracteres: 
 
-   	S1:  + - + - + - + ...      
+   	S1:  + - + - + - + ...      Mateo Simbaña
 
     S2:  + + ++ +++ +++++ ++++++++ +++++++++++++ ...
 
@@ -51,8 +51,8 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 	S4:  +  -  *  /  +  -  *  / +  -  *  /  ...
 
     S5:  \  |  /    -   |   \  |  /    -   |    \  |  /    -   |  ....
-
-    S6:  a  b   c   d   e   f   g   h   ...
+       
+    S6:  a  b   c   d   e   f   g   h   ...    Mateo Simbaña
 
     S6:  a  +   c   -   e   +   g   -   ...
 
