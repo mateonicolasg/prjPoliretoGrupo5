@@ -6,6 +6,9 @@ public class App {
         MateoGrupo5 oSerieNumeros12 = new MateoGrupo5();
         SerieTercerEjercicio SerieTercerEjercicio = new SerieTercerEjercicio();
 
+        SerieCaracteres1 oSerieCaracteres1 = new SerieCaracteres1();
+        SerieCaracteres6 oSerieCaracteres6 = new SerieCaracteres6();
+
         System.out.println("GRUPO: ");        
         System.out.println("INTEGRANTES: Simbaña.Mateo, Vera.Edison, Negrete.Francisco, Unaucho.David, Velasco.Matheus, Santacruz.Estefano, Vanegas.German");        
         
@@ -36,7 +39,24 @@ public class App {
         System.out.println();
         oSerieNumeros12.showSerieDowhile(nroTerminos);
 
-        
+        System.out.println();
+        System.out.println("------------------------");
+        System.out.println("SERIES CARACTERES");
+        System.out.println();
+        System.out.println("S1: ");
+        oSerieCaracteres1.showSerieFor(nroTerminos);
+        System.out.println();
+        oSerieCaracteres1.showSerieDowhile(nroTerminos);
+        System.out.println();
+        oSerieCaracteres1.showSerieWhile(nroTerminos);
+
+        System.out.println();
+        System.out.println("S6: ");
+        oSerieCaracteres6.showSerieFor(nroTerminos);
+        System.out.println();
+        oSerieCaracteres6.showSerieDowhile(nroTerminos);
+        System.out.println();
+        oSerieCaracteres6.showSerieWhile(nroTerminos);
         sc.close();
     }
 }
