@@ -1,4 +1,5 @@
-/* Copyright (C) 2K23B, Mateo Simbaña
+/** 
+ * Copyright (C) 2K23B, Mateo Simbaña
  * () mateo.simbana@epn.edu.ec
  * Version 1.0
  */

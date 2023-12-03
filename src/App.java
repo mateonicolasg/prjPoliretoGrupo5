@@ -1,10 +1,11 @@
 import java.util.Scanner;
 
 public class App {
+    public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
         MateoGrupo5 oSerieNumeros12 = new MateoGrupo5();
         SerieTercerEjercicio SerieTercerEjercicio = new SerieTercerEjercicio();
+        SerieNumero4 serieCuatro = new SerieNumero4();
 
         SerieCaracteres1 oSerieCaracteres1 = new SerieCaracteres1();
         SerieCaracteres2 oSerieCaracteres2 = new SerieCaracteres2();
@@ -22,7 +23,6 @@ public class App {
         SerieTercerEjercicio.mostrarSerie();
         
         //Francisco Torres
-            SerieNumero4 serieCuatro = new SerieNumero4();
             System.out.println();
             System.out.println("S4: ");
             serieCuatro.TorresSerie4For(nroTerminos);
@@ -54,10 +54,10 @@ public class App {
         System.out.println();
         System.out.println("S2: ");
         oSerieCaracteres2.showSerieFor(nroTerminos);
-        // System.out.println();
-        // System.out.println("S5: ");
-        // oSerieCaracteres5.showSerieFor(nroTerminos);
-        // System.out.println();
+        System.out.println();
+        oSerieCaracteres2.showSerieDowhile(nroTerminos);
+        System.out.println();
+        oSerieCaracteres2.showSerieWhile(nroTerminos);
 
         System.out.println();
         System.out.println("S6: ");
@@ -66,8 +66,8 @@ public class App {
         oSerieCaracteres6.showSerieDowhile(nroTerminos);
         System.out.println();
         oSerieCaracteres6.showSerieWhile(nroTerminos);
+        System.out.println();
 
 
-        sc.close();
     }
 }

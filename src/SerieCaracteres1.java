@@ -1,4 +1,5 @@
-/* Copyright (C) 2K23B, Mateo Simbaña
+/**
+ * Copyright (C) 2K23B, Mateo Simbaña
  * () mateo.simbana@epn.edu.ec
  * Version 1.0
  */
@@ -8,8 +9,7 @@
  * @author: Mateo Simbaña
  * @version: 1.0
  */
-public class SerieCaracteres1 {
-    // 1:  + - + - + - + ...      
+public class SerieCaracteres1 {  
     private char par, impar;
     public SerieCaracteres1(){
         this.par = '+';
