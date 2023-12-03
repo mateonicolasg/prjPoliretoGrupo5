@@ -48,15 +48,15 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 
     S3:  ++	 +++ +++++ +++++++ +++++++++++ +++++++++++++ ...
 
-	S4:  +  -  *  /  +  -  *  / +  -  *  /  ...
+	S4:  +  -  *  /  +  -  *  / +  -  *  /  ...     Mateo Simbaña
 
-    S5:  \  |  /    -   |   \  |  /    -   |    \  |  /    -   |  ....
+    S5:  \  |  /    -   |   \  |  /    -   |    \  |  /    -   |  ....  Mateo Simbaña
        
     S6:  a  b   c   d   e   f   g   h   ...    Mateo Simbaña
 
-    S6:  a  +   c   -   e   +   g   -   ...
+    S6:  a  +   c   -   e   +   g   -   ...    Mateo Simbaña
 
-    S7:  aa   bbbb  cccccc  dddddddd    ...
+    S7:  aa   bbbb  cccccc  dddddddd    ...    Mateo Simbaña
 
     S8:  a  bbb  ccccc  ddddddd eeeeeeeee...
 

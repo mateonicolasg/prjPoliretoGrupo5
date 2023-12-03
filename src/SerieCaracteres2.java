@@ -6,7 +6,7 @@
 
 
 /**
- * Crea la siguiente serie
+ * Crea la siguiente serie de caracteres
  * @author: Mateo Simbaña
  * @version: 1.0
  */
@@ -60,7 +60,7 @@ public class SerieCaracteres2 {
         }      
     }
     /**
-     * <b>showSeriewhile</b> muestra la serie usando el ciclo while S2:  + + ++ +++ +++++ ++++++++ +++++++++++++ ...
+     * <b>showSerieWhile</b> muestra la serie usando el ciclo while S2:  + + ++ +++ +++++ ++++++++ +++++++++++++ ...
      * @param nroTerminos: numero de terminos para la serie
      * showSerieWhile
      */
