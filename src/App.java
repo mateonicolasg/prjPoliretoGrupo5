@@ -15,6 +15,9 @@ public class App {
         SerieCaracteres6B oSerieCaracteres6B = new SerieCaracteres6B();
         SerieCaracteres7 oSerieCaracteres7 = new SerieCaracteres7();
 
+        Figura3 oFigura3 = new Figura3();
+        Figura4 oFigura4 = new Figura4();
+
         System.out.println("GRUPO: ");        
         System.out.println("INTEGRANTES: Simbaña.Mateo, Vera.Edison, Negrete.Francisco, Unaucho.David, Velasco.Matheus, Santacruz.Estefano, Vanegas.German");        
         
@@ -105,6 +108,23 @@ public class App {
         // oSerieCaracteres7.showSerieWhile(nroTerminos);
         // System.out.println();
 
-
+        System.out.print("Ingrese el número de niveles o tamaños para las figuras: ");
+        int nroNiveles = sc.nextInt();
+        System.out.println("F3:");
+        System.out.println();
+        oFigura3.showFiguraFor(nroNiveles);
+        System.out.println();
+        oFigura3.showFiguraDowhile(nroNiveles);
+        System.out.println();
+        oFigura3.showFiguraWhile(nroNiveles);
+        
+        System.out.println("F4:");
+        System.out.println();
+        oFigura4.showFiguraFor(nroNiveles);
+        System.out.println();
+        oFigura4.showFiguraDowhile(nroNiveles);
+        System.out.println();
+        oFigura4.showFiguraWhile(nroNiveles);
+        System.out.println();
     }
 }

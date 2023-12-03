@@ -78,7 +78,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             * + * + *
 
     F3:     *            
-            * *          
+            * *                     Mateo Simbaña
             * * *        
             * * * *       
             * * * * *    
