@@ -44,7 +44,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 
    	S1:  + - + - + - + ...      Mateo Simbaña
 
-    S2:  + + ++ +++ +++++ ++++++++ +++++++++++++ ...
+    S2:  + + ++ +++ +++++ ++++++++ +++++++++++++ ...    Mateo Simbaña
 
     S3:  ++	 +++ +++++ +++++++ +++++++++++ +++++++++++++ ...
 
