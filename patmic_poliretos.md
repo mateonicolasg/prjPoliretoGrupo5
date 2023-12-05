@@ -46,7 +46,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 
     S2:  + + ++ +++ +++++ ++++++++ +++++++++++++ ...    Mateo Simbaña
 
-    S3:  ++	 +++ +++++ +++++++ +++++++++++ +++++++++++++ ...
+    S3:  ++	 +++ +++++ +++++++ +++++++++++ +++++++++++++ ...    David Unaucho
 
 	S4:  +  -  *  /  +  -  *  / +  -  *  /  ...     Mateo Simbaña
 
@@ -58,9 +58,9 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 
     S7:  aa   bbbb  cccccc  dddddddd    ...    Mateo Simbaña
 
-    S8:  a  bbb  ccccc  ddddddd eeeeeeeee...
+    S8:  a  bbb  ccccc  ddddddd eeeeeeeee...            Edison Vera
 
-    S9:  a  b  c  dd  eee  fffff  gggggggg ...    
+    S9:  a  b  c  dd  eee  fffff  gggggggg ...    Francisco Negrete
 
 
 >> Figuras: se debe pedir tamaño/niveles
@@ -68,11 +68,11 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
     F1:     * * * * *
             *       *
             *       *  
-            *       *
+            *       *           David Unaucho
             * * * * *
 
     F2:     * + * + *
-            +       +
+            +       +           David Unaucho
             *       *   
             +       +
             * + * + *
@@ -85,7 +85,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 
     F4:             *  
                   * *       
-                * * *       
+                * * *               Mateo Simbaña
               * * * *     
             * * * * *
     
@@ -109,12 +109,12 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
                 |___
                     |___
                         |___
-                            |___
+                            |___            Edison Vera
     
     F8:
                             ___
                         ___|
-                    ___|
+                    ___|                    Edison Vera
                 ___|
             ___|
 
@@ -123,12 +123,12 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
                         ___|   |___
                     ___|	   	   |___
                 ___|		   		   |___
-            ___|			   			   |___
+            ___|			   			   |___     Germán Vanegas
 
 	F10:
             _+_
                 |_-_
-                    |_+_
+                    |_+_                        Germán Vanegas
                         |_-_
                             |_+_
                                 |
@@ -137,7 +137,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             | _ 
                | _ _
                     | _ _ _
-                           | _ _ _ _
+                           | _ _ _ _            Germán Vanegas
                                     | _ _ _ _ _
                    
 	F12:
@@ -149,7 +149,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             12345
             1234
             123
-            12
+            12                  Edison Vera
             1
 
 	F13:
@@ -157,7 +157,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             12
             123
             1234
-            12345
+            12345               Edison Vera
             123456
             1234567
             12345678
@@ -169,7 +169,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
                       1    1
                     1    2    1
                   1    3    3    1
-               1    4    6    4    1
+               1    4    6    4    1            Estefano Santacruz
              1   5   10    10    5   1
             ....
 
@@ -177,7 +177,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             1
             1	1
             1	2	1
-            1   3   3    1
+            1   3   3    1                      Estefano Santacruz
             1   4   6    4    1
             1   5   10   10   5   1
             ....
@@ -185,7 +185,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
     F16:
             +				+
                 -		-
-                    +
+                    +                       Francisco Negrete
                 -		-
             +				+
             ....
@@ -193,7 +193,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
     F17:
             1				1
                 0		0
-                    1
+                    1                   Francisco Negrete
                 0		0
             1				1
             ....
@@ -203,14 +203,14 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             1   2
             1   3   2
             1   4   5   2
-            1   5   9   7  2
+            1   5   9   7  2            Matheus Velasco
             1   6   14  16  9  2
             ....
         
     F19:
             *
             +   *
-            +   3   *
+            +   3   *                   Matheus Velasco
             +   4   5   *
             +   5   9   7  *
             +   6   14  16  9  *
@@ -220,21 +220,21 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 >> Cadena de caracteres:
 
 	C01)    Pedir una frase y contador las vocales. 
-            Ejemplo, frase: ballena
+            Ejemplo, frase: ballena                     David Unaucho
                     salida: tiene 3 vocales
 
 	C02)    Pedir una frase y contador las letras.  
-            Ejemplo, frase : ballena
+            Ejemplo, frase : ballena                    David Unaucho
                     salida: tiene 4 letras
 
 	C03)    Pedir una frase y una vocal, eliminar la vocal ingresada de la frase. 
             Ejemplo, frase: ballena azul  
-                    vocal : a
+                    vocal : a                           Edison Vera
                     salida: b ll n   z l
 
 	C04)    Pedir una frase y una letra, eliminar la letra ingresada de la frase. 
             Ejemplo, frase: ballena azul  
-                    letra : l
+                    letra : l                           Germán Vanegas
                     salida: ba  ena azu 
 
 	C05)    Pedir una frase y presentarla inverida con las vocales en mayusculas. 
@@ -253,12 +253,12 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             Se forman cuando se utilizan todas las letras de una palabra pero modificando el orden.
             Mostrar una palabra de un conjunto y solicita que ingrese el Anagramas de esa palabra.
             Si falla a la tercera mostrar la respuesta
-                Ejemplo, palabra : delira
+                Ejemplo, palabra : delira                                                               Estefano Santacruz
                          salida  : lidera 
             conjunto = {delira, lidera, Ballena: llenaba, Alondra, Ladrona, España, apañes, Enrique, quieren}
 
     C09)   Ingresa una frase y convertir una leta a mayusculas y otra a minisculas
-            Ejemplo, frase : di mi nombre
+            Ejemplo, frase : di mi nombre                                               
                     salida : Di Mi NoMbRe
 
 >> Arrays
@@ -269,7 +269,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             Ingrese el porcentaje de carga: 100 75 50 25
             Pancracia Carmeliana Altamirano Perez 
 
-            [==============>] 100% Pancracia
+            [==============>] 100% Pancracia                                                David Unaucho
             [==========>    ]  75% Carmeli
             [=======>       ]  50% Altam
             [===>           ]  25% Pe
@@ -280,9 +280,9 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             Ingrese caracter : *
 
             *****   *****      
-            *   *   *   *      
+            *   *   *   *                                       Germán Vanegas
             *****   *****      
-            *       *                   
+            *       *                               
             *       *  
 
 
@@ -293,7 +293,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             5 |          i
             4 |        m
             3 |      t
-            2 |    a
+            2 |    a                            Edison Vera
             1 |  p
             0 |______________________
             
@@ -304,7 +304,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
                 a                   a
                     t           c
                         r   c
-                        h   i
+                        h   i                   Estefano Santacruz
                     a           c
                                     i
                                         o
@@ -315,7 +315,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 
             P                           P
                 a                   a
-                M   *   i   h   c   e   l
+                M   *   i   h   c   e   l               Germán Vanegas
                         r   c
                         h   i
             A   n   *   a   *   *   a   r
@@ -325,47 +325,46 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 >> Loading, Usar el delay para animar  
 
     L01) Indicador de carga desde 0  a 100% usar los signos \|/-| para simular un movimiento rotacional de carga 0% hasta 100%  
-         / 100%
+         / 100%                         Francisco Negrete
     
     L02) Pedir un caracter para la simular la carga y la logitud de la barra es de 20 caracteres 
-        [###         ] 20%
-    
+        [###         ] 20%              Francisco Negrete
     L03) Pedir un caracter que se desplaza de izquierda a derecha en una la barra es de 20 caracteres 
-        [-           ] 20%
+        [-           ] 20%              Francisco Negrete
 
     L04) Waiting que inicia en 0  a 100% usar los signos o0o para simular un movimiento de ida y vuelta en el mismo puesto  
-         o0o 100%
+         o0o 100%                       Matheus Velasco
 
     L05) Crear una barra es de 20 caracteres, la barra avanza cambiando la punta entre > -
-         [=======>           ] 20%
+         [=======>           ] 20%      Matheus Velasco
     
     L06) Crear una barra es de 20 caracteres, la barra <=> se desplaza de izquierda a derecha
-         [     <=>        ] 20%
+         [     <=>        ] 20%         Matheus Velasco
 
     L07) Crear una barra es de 20 caracteres, la barra avanza cambiando la punta con movimiento rotacional signos \|/-|
-         [====/           ] 20%
+         [====/           ] 20%         Matheus Velasco
     
     L08) Pedir el nombre y apellidos y realizar la carga mostrando letra a letra hasta el 100% 
-        [Patricio            ] 50%
+        [Patricio            ] 50%                      Estefano Santacruz
 
 	L09) Pedir y mostrar el nombre completo, mostrando solo una letra en la misma linea 0% hasta 100% 
 		Ejemplo: Patricio Paccha
           t                 15%
 		 	r				20%
-		        o       	50%
+		        o       	50%                         Estefano Santacruz
 		               a    100%
 
 	L10) Desplazar la figura a la derecha y regresar
            \|||/
            (> <)       
-        ooO-(_)-Ooo 
+        ooO-(_)-Ooo                                     David Unaucho
 
 >> Recursion
-    R01) crear un metodo recursivo para obtener factorial(n)  
+    R01) crear un metodo recursivo para obtener factorial(n)  Edison Vera
     R02) crear un metodo recursivo para obtener la suma(a,b)  
-    R03) crear un metodo recursivo para obtener la multiplicacion(a,b)  
-    R04) crear un metodo recursivo para obtener la potencia(a,b)  
-    R05) crear un metodo recursivo para obtener la conteoProgregresivoHasta(n) / imprimir el avance
-    R06) crear un metodo recursivo para obtener la conteoRegresivo(n)  hasta 0 / imprimir el avance
+    R03) crear un metodo recursivo para obtener la multiplicacion(a,b)    Matheus Velasco
+    R04) crear un metodo recursivo para obtener la potencia(a,b)    Francisco Negrete
+    R05) crear un metodo recursivo para obtener la conteoProgregresivoHasta(n) / imprimir el avance   Germán Vanegas
+    R06) crear un metodo recursivo para obtener la conteoRegresivo(n)  hasta 0 / imprimir el avance     Estefano Santacruz
     
     Extra si usa memoria retenida en la recursiones 
