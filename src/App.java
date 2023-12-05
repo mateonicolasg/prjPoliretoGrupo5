@@ -1,70 +1,204 @@
 import java.util.Scanner;
+
 public class App {
+    public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) throws Exception {
-        Scanner scanner = new Scanner(System.in);
+        MateoGrupo5 oSerieNumeros12 = new MateoGrupo5();
+        SerieTercerEjercicio SerieTercerEjercicio = new SerieTercerEjercicio();
+        SerieNumero4 serieCuatro = new SerieNumero4();
+        SerieNumeros_X2 oSerieNumeros9 = new SerieNumeros_X2();
+        SerieNumeros_X3 oSerieNumeros10 = new SerieNumeros_X3();
 
-        System.out.println("----------------Bienvenido al programa de series de numeros del grupo 5----------------");
-        System.out.println("Integrantes: .......");
-        System.out.println("1. Serie Fibonacci");
-        System.out.println("2. Serie Alternante");
-        System.out.println("3. Serie Fraccion Fibonacci Impar");
-        System.out.println("4. Serie Fraccion Fibonacci Par");
-        System.out.println("5. Serie Numeros Primos");
-        System.out.println("6. Serie Cuadrados");
-        System.out.println("7. Serie Aritmetica");
-        System.out.println("8. Serie Aritmetica +5");
-        System.out.println("9. Serie Numeros Potencia de 2");
-        System.out.println("10. Serie Numeros Potencia de 3");
-        System.out.println("11. Serie Numeros Aritmetica +4");
-        System.out.println("Ingrese el numero de la serie que desea ver: ");
-        int NroSerie = scanner.nextInt();
+        SerieCaracteres1 oSerieCaracteres1 = new SerieCaracteres1();
+        SerieCaracteres2 oSerieCaracteres2 = new SerieCaracteres2();
+        SerieCaracteres4 oSerieCaracteres4 = new SerieCaracteres4();
+        SerieCaracteres5 oSerieCaracteres5 = new SerieCaracteres5();
+        SerieCaracteres6 oSerieCaracteres6 = new SerieCaracteres6();
+        SerieCaracteres6B oSerieCaracteres6B = new SerieCaracteres6B();
+        SerieCaracteres7 oSerieCaracteres7 = new SerieCaracteres7();
 
-        System.out.println("Ingrese el numero de terminos de la serie: ");
-        int NroTerminos = scanner.nextInt();
+        Figura3 oFigura3 = new Figura3();
+        Figura4 oFigura4 = new Figura4();
+        Figura18 oFigura18 = new Figura18();
+        Figura19 oFigura19 = new Figura19();
 
-        SerieNumeros_X2 serie_9 = new SerieNumeros_X2();
-        SerieNumeros_X3 serie_10 = new SerieNumeros_X3();
+        Loading04 oLoading04 = new Loading04(); 
+        Loading05 oLoading05 = new Loading05();
+        Loading06 oLoading06 = new Loading06();
+        Loading07 oLoading07 = new Loading07(); 
 
-        switch (NroSerie) {
-            case 1:
-                
-                break;
-            case 2:
+        Recursion03 oRecursion03 = new Recursion03();
 
-                break;
-            case 3:
+        System.out.println("GRUPO: ");        
+        System.out.println("INTEGRANTES: Simbaña.Mateo, Vera.Edison, Negrete.Francisco, Unaucho.David, Velasco.Matheus, Santacruz.Estefano, Vanegas.German");        
+        
+        System.out.print("Ingrese el número de términos para las series: ");
+        int nroTerminos = sc.nextInt();
 
-                break;
-            case 4:
-                
-                break;
-            case 5:
+        // MATHEUS VELASCO
+        System.out.println("S9:");
+        oSerieNumeros9.serienumeros_X2(nroTerminos);
+        System.out.println();
+        oSerieNumeros9.serienumeros_X2while(nroTerminos);
+        System.out.println();
+        oSerieNumeros9.serienumeros_X2doWhile(nroTerminos);
 
-                break;
-            case 6:
-                
-                break;
-            case 7:
-                
-                break;
-            case 8:
-                
-                break;
-            case 9:
-            // Matheus Velasco
-                serie_9.serienumeros_X2(NroTerminos);
-                break;
-            case 10:
-            // Matheus Velasco
-                serie_10.serienumeros_X3(NroTerminos);   
-                break;
-            case 11:
-                
-                break;
-            default:
-                System.out.println("El numero de serie no existe");
-                break;
-        }
-        scanner.close();
+        System.out.println("S10:");
+        oSerieNumeros10.serienumeros_X3(nroTerminos);
+        System.out.println();
+        oSerieNumeros10.serienumeros_X3while(nroTerminos);
+        System.out.println();
+        oSerieNumeros10.serienumeros_X3dowhile(nroTerminos);
+
+
+
+        // // German Vanegas
+        // System.out.println("S3: ");
+        // SerieTercerEjercicio.generarSerie(nroTerminos);
+        // SerieTercerEjercicio.mostrarSerie();
+        
+        // //Francisco Torres
+        //     System.out.println();
+        //     System.out.println("S4: ");
+        //     serieCuatro.TorresSerie4For(nroTerminos);
+        //     System.out.println();
+        //     serieCuatro.TorresSerie4while(nroTerminos);
+        //     System.out.println();
+        //     serieCuatro.TorresSerie4Dowhile(nroTerminos);
+
+        // // Mateo Simbaña
+        // System.out.println();
+        // System.out.println("S12: ");
+        // oSerieNumeros12.showSerieFor(nroTerminos); 
+        // System.out.println();
+        // oSerieNumeros12.showSerieWhile(nroTerminos);
+        // System.out.println();
+        // oSerieNumeros12.showSerieDowhile(nroTerminos);
+
+        // System.out.println();
+        // System.out.println("------------------------");
+        // System.out.println("SERIES CARACTERES");
+        // System.out.println();
+        // System.out.println("S1: ");
+        // oSerieCaracteres1.showSerieFor(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres1.showSerieDowhile(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres1.showSerieWhile(nroTerminos);
+
+        // System.out.println();
+        // System.out.println("S2: ");
+        // oSerieCaracteres2.showSerieFor(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres2.showSerieDowhile(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres2.showSerieWhile(nroTerminos);
+
+        // System.out.println();
+        // System.out.println("S4: ");
+        // oSerieCaracteres4.showSerieFor(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres4.showSerieDowhile(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres4.showSerieWhile(nroTerminos);
+        
+        // System.out.println();
+        // System.out.println("S5: ");
+        // oSerieCaracteres5.showSerieFor(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres5.showSerieDowhile(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres5.showSerieWhile(nroTerminos);
+
+        // System.out.println();
+        // System.out.println("S6: ");
+        // oSerieCaracteres6.showSerieFor(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres6.showSerieDowhile(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres6.showSerieWhile(nroTerminos);
+        // System.out.println();
+
+        // System.out.println();
+        // System.out.println("6B: ");
+        // oSerieCaracteres6B.showSerieFor(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres6B.showSerieDowhile(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres6B.showSerieWhile(nroTerminos);
+
+        // System.out.println();
+        // System.out.println("6B: ");
+        // oSerieCaracteres7.showSerieFor(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres7.showSerieDowhile(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteres7.showSerieWhile(nroTerminos);
+        // System.out.println();
+
+        System.out.print("Ingrese el número de niveles o tamaños para las figuras: ");
+        int nroNiveles = sc.nextInt();
+        System.out.println("F3:");
+        System.out.println();
+        oFigura3.showFiguraFor(nroNiveles);
+        System.out.println();
+        oFigura3.showFiguraDowhile(nroNiveles);
+        System.out.println();
+        oFigura3.showFiguraWhile(nroNiveles);
+        
+        System.out.println("F4:");
+        System.out.println();
+        oFigura4.showFiguraFor(nroNiveles);
+        System.out.println();
+        oFigura4.showFiguraDowhile(nroNiveles);
+        System.out.println();
+        oFigura4.showFiguraWhile(nroNiveles);
+        System.out.println();
+
+        System.out.println("F18:");
+        System.out.println();
+        oFigura18.figura18for(nroNiveles);
+        System.out.println();
+        oFigura18.figura18While(nroNiveles);
+        System.out.println();
+        oFigura18.figuras18DoWhile(nroNiveles);
+
+        System.out.println("F19:");
+        System.out.println();
+        oFigura19.figura19For(nroNiveles);
+        System.out.println();
+        oFigura19.figuras19While(nroNiveles);
+        System.out.println();
+        oFigura19.figuras19DoWhile(nroNiveles);
+
+        System.out.println("Loading04:");
+        System.out.println();
+        oLoading04.loading04();
+        System.out.println();
+
+        System.out.println("Loading05:");
+        System.out.println();
+        oLoading05.loading05();
+        System.out.println();
+
+        System.out.println("Loading06:");
+        System.out.println();
+        oLoading06.loading06();
+        System.out.println();
+
+        System.out.println("Loading07:");
+        System.out.println();
+        oLoading07.loading07();
+        System.out.println();
+        
+        System.out.print("Introduce el valor de a: ");
+            int a = sc.nextInt();
+
+        System.out.print("Introduce el valor de b: ");
+            int b = sc.nextInt();
+
+        System.out.println("Recursion03:");
+        System.out.println();
+        System.out.println("El resultado es: " + oRecursion03.recusion03(a, b));
     }
 }

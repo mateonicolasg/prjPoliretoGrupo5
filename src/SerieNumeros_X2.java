@@ -11,8 +11,8 @@ public class SerieNumeros_X2 {
         }
 }
 
-// While
-/*  public void serienumeros_X2(int NroTerminos) {
+
+public void serienumeros_X2while(int NroTerminos) {
         int i = 1;
         int serie = 2;
         while (i <= NroTerminos) {
@@ -20,10 +20,10 @@ public class SerieNumeros_X2 {
             serie = serie * 2;
             i++;
         }
-    }*/
+    }
 
-// Do While
-/*    public void serienumeros_X2(int NroTerminos) {
+
+public void serienumeros_X2doWhile(int NroTerminos) {
         int i = 1;
         int serie = 2;
         do {
@@ -32,6 +32,6 @@ public class SerieNumeros_X2 {
             i++;
         } while (i <= NroTerminos);
         System.out.println();
-}*/
+}
 
 }
