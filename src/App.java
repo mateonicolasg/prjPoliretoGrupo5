@@ -3,18 +3,23 @@ import java.util.Scanner;
 public class App {
     public static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) throws Exception {
+        SerieNumero1 oSerieNumero1 = new SerieNumero1();
+        SerieNumero2 oSerieNumero2 = new SerieNumero2();
         MateoGrupo5 oSerieNumeros12 = new MateoGrupo5();
         SerieTercerEjercicio SerieTercerEjercicio = new SerieTercerEjercicio();
         SerieNumero4 serieCuatro = new SerieNumero4();
 
         SerieCaracteres1 oSerieCaracteres1 = new SerieCaracteres1();
         SerieCaracteres2 oSerieCaracteres2 = new SerieCaracteres2();
+        SerieCaracteresS3 oSerieCaracteresS3 = new SerieCaracteresS3();
         SerieCaracteres4 oSerieCaracteres4 = new SerieCaracteres4();
         SerieCaracteres5 oSerieCaracteres5 = new SerieCaracteres5();
         SerieCaracteres6 oSerieCaracteres6 = new SerieCaracteres6();
         SerieCaracteres6B oSerieCaracteres6B = new SerieCaracteres6B();
         SerieCaracteres7 oSerieCaracteres7 = new SerieCaracteres7();
 
+        Figura1 oFigura1 = new Figura1();
+        Figura2 oFigura2 = new Figura2();
         Figura3 oFigura3 = new Figura3();
         Figura4 oFigura4 = new Figura4();
 
@@ -37,6 +42,35 @@ public class App {
         //     serieCuatro.TorresSerie4while(nroTerminos);
         //     System.out.println();
         //     serieCuatro.TorresSerie4Dowhile(nroTerminos);
+
+        // // David Unaucho
+
+
+        // System.out.println();
+        // System.out.println("S1: ");
+        // oSerieNumero1.UnauchoSerie1for(nroTerminos);
+        // System.out.println();
+        // oSerieNumero1.UnauchoSerie1while(nroTerminos);
+        // System.out.println();
+        // oSerieNumero1.UnauchoSerie1Dowhile(nroTerminos);
+
+        // System.out.println();
+        // System.out.println("S2: ");
+        // oSerieNumero2.UnauchoSerie2for(nroTerminos);
+        // System.out.println();
+        // oSerieNumero2.UnauchoSerie2while(nroTerminos);
+        // System.out.println();
+        // oSerieNumero2.UnauchoSerie2Dowhile(nroTerminos);
+
+       
+        // System.out.println();
+        // System.out.println("S-C 3: ");
+        // oSerieCaracteresS3.showSerieFor(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteresS3.showSerieDoWhile(nroTerminos);
+        // System.out.println();
+        // oSerieCaracteresS3.showSerieWhile(nroTerminos);
+        
 
         // // Mateo Simbaña
         // System.out.println();
@@ -110,6 +144,23 @@ public class App {
 
         System.out.print("Ingrese el número de niveles o tamaños para las figuras: ");
         int nroNiveles = sc.nextInt();
+        
+        System.out.println("F1:");
+        System.out.println();
+        oFigura1.showFiguraFor1(nroNiveles);
+        System.out.println();
+        oFigura1.showFiguraDoWhile1(nroNiveles);
+        System.out.println();
+        oFigura1.showFiguraWhile1(nroNiveles);
+
+        System.out.println("F2:");
+        System.out.println();
+        oFigura2.showFiguraFor2(nroNiveles);
+        System.out.println();
+        oFigura2.showFiguraDoWhile2(nroNiveles);
+        System.out.println();
+        oFigura2.showFiguraWhile2(nroNiveles);
+        
         System.out.println("F3:");
         System.out.println();
         oFigura3.showFiguraFor(nroNiveles);
@@ -126,5 +177,7 @@ public class App {
         System.out.println();
         oFigura4.showFiguraWhile(nroNiveles);
         System.out.println();
+       
+        
     }
 }
