@@ -1,10 +1,10 @@
 public class figuras {
 
-    public void f16(){
+    public void f16(int n){
         System.out.println();
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-                if (i==j || i==10-j) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i==j || i==n-j) {
                     if (i%2==0 && j%2==0) {
                         System.out.print("- ");
                     }
@@ -18,11 +18,11 @@ public class figuras {
         }
         System.out.println();
     }
-    public void f17(){
+    public void f17(int n){
         System.out.println();
-        for (int i = 0; i < 10; i++) {
-            for (int j = 0; j < 10; j++) {
-                if (i==j || i==10-j) {
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (i==j || i==n-j) {
                     if (i%2==0 && j%2==0) {
                         System.out.print("0 ");
                     }

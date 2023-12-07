@@ -12,15 +12,17 @@
 public class SerieCaracteres9{
 
     public void serieCaracteres9(int n){
-        char letra = 'c';
+        int num1=0,num2=1,num3;
+        char letra='c';
         System.out.print("a "+"b ");
         for (int i = 1; i <= n; i++) {
-            for (int j = 0; j < i; j++) {
-                System.out.print(letra);
+            num3=num1+num2;
+            for (int j = 0; j < num3; j++) {
+                System.out.print(" "+letra);
             }
-
-            System.out.print(" ");
             letra++;
+           num1=num2;
+           num2=num3;
     }
     
     
