@@ -5,7 +5,7 @@
  */
 
 /**
- * Crea la siguiente serie de caracteres
+ * Crea la siguiente Figura
  * @author: Mateo Simbaña
  * @version: 1.0
  */

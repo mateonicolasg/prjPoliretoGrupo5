@@ -93,13 +93,13 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 		 *********
 		  *******
 		   *****
-		    ***                     
+		    ***                     Mateo Simbaña
 		     *
 
 	F6:
 		     *
 		    ***
-		   *****
+		   *****                    Mateo Simbaña
 		  *******
 		 *********
 		 ...
@@ -238,15 +238,15 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
                     salida: ba  ena azu 
 
 	C05)    Pedir una frase y presentarla inverida con las vocales en mayusculas. 
-            Ejemplo, frase: ballena
+            Ejemplo, frase: ballena                     Mateo Simbaña
                     salida: AnEllAb 
 
 	C06)    Pedir una frase y presentarla inverida con las letras en mayusculas. 
-            Ejemplo, frase: ballena
+            Ejemplo, frase: ballena                     Mateo Simbaña
                     salida: aNeLLaB 
 	
 	C07)    Pedir una frase y presentarla en mayusculas y sin la J
-            Ejemplo, frase: mujeres
+            Ejemplo, frase: mujeres                     Mateo Simbaña
                     salida: MUERES 
 
 	C08)    Anagramas de palabras. 
@@ -258,8 +258,8 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             conjunto = {delira, lidera, Ballena: llenaba, Alondra, Ladrona, España, apañes, Enrique, quieren}
 
     C09)   Ingresa una frase y convertir una leta a mayusculas y otra a minisculas
-            Ejemplo, frase : di mi nombre                                               
-                    salida : Di Mi NoMbRe
+            Ejemplo, frase : di mi nombre                   Mateo Simbaña                                         
+                    salida : Di Mi NoMbRe   
 
 >> Arrays
 
@@ -361,7 +361,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 
 >> Recursion
     R01) crear un metodo recursivo para obtener factorial(n)  Edison Vera
-    R02) crear un metodo recursivo para obtener la suma(a,b)  
+    R02) crear un metodo recursivo para obtener la suma(a,b)  Mateo Simbaña
     R03) crear un metodo recursivo para obtener la multiplicacion(a,b)    Matheus Velasco
     R04) crear un metodo recursivo para obtener la potencia(a,b)    Francisco Negrete
     R05) crear un metodo recursivo para obtener la conteoProgregresivoHasta(n) / imprimir el avance   Germán Vanegas
