@@ -2,7 +2,8 @@ import java.util.Scanner;
 
 public class SerieCadenasC1 {
 
-    public static void main(String[] args) {
+
+    public void Frase1() {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Ingresa una frase:");
@@ -13,7 +14,7 @@ public class SerieCadenasC1 {
         System.out.println("La frase tiene " + contadorVocales + " vocales.");
     }
 
-    public static int contarVocales(String frase) {
+    public  int contarVocales(String frase) {
         int contador = 0;
         int vocalesA = 0, vocalesE = 0, vocalesI = 0, vocalesO = 0, vocalesU = 0;
 
