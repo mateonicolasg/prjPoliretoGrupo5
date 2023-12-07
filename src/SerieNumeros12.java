@@ -11,11 +11,11 @@
  * @version: 1.0
  */
 
-public class MateoGrupo5 {
+public class SerieNumeros12 {
 
     private int primerFactor, segundoFactor;
 
-    public MateoGrupo5 (){
+    public SerieNumeros12 (){
         this.primerFactor = 2;
         this.segundoFactor = 1;
     }
