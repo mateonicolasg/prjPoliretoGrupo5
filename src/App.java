@@ -17,6 +17,7 @@ public class App {
         SerieNumero4 serieCuatro = new SerieNumero4();
         delays progressbar=new delays();
         figuras f16yf17=new figuras();
+        recursivo potencia=new recursivo();
         Figura3 oFigura3 = new Figura3();
         Figura4 oFigura4 = new Figura4();
         Figura18 oFigura18 = new Figura18();
@@ -32,8 +33,9 @@ public class App {
         System.out.println("GRUPO: ");        
         System.out.println("INTEGRANTES: Simbaña.Mateo, Vera.Edison, Negrete.Francisco, Unaucho.David, Velasco.Matheus, Santacruz.Estefano");        
         
-        // System.out.print("Ingrese el número de términos para las series: ");
-        // int nroTerminos = sc.nextInt();
+        System.out.print("Ingrese el número de términos para las series: ");
+        int nroTerminos = sc.nextInt();
+        int term2=sc.nextInt();
 
         // // MATHEUS VELASCO
         // System.out.println("S9:");
@@ -57,14 +59,36 @@ public class App {
         SerieTercerEjercicio.generarSerie(nroTerminos);
         SerieTercerEjercicio.mostrarSerie();
         
-        // //Francisco Torres
-        //     System.out.println();
-        //     System.out.println("S4: ");
-        //     serieCuatro.TorresSerie4For(nroTerminos);
-        //     System.out.println();
-        //     serieCuatro.TorresSerie4while(nroTerminos);
-        //     System.out.println();
-        //     serieCuatro.TorresSerie4Dowhile(nroTerminos);
+        //Francisco Torres
+            System.out.println();
+            System.out.println("S4: ");
+            serieCuatro.TorresSerie4For(nroTerminos);
+            System.out.println();
+            serieCuatro.TorresSerie4while(nroTerminos);
+            System.out.println();
+            serieCuatro.TorresSerie4Dowhile(nroTerminos);
+            System.out.println();
+            System.out.println("S9: ");
+            serie9.serieCaracteres9(nroTerminos);
+            System.out.println();
+            System.out.println("F16: ");
+            f16yf17.f16(nroTerminos);
+            System.out.println();
+            System.out.println("F17: ");
+            f16yf17.f17(nroTerminos);
+            System.out.println();
+            System.out.println("L01: ");
+            progressbar.L01();
+            System.out.println();
+            System.out.println("L02: ");
+            progressbar.L02();
+            System.out.println();
+            System.out.println("L03: ");
+            progressbar.L03();
+            System.out.println();
+            System.out.println("R4: ");
+            int pot=potencia.potenciaRecursiva(nroTerminos, term2);
+            System.out.println(pot);
 
         // // Mateo Simbaña
         // System.out.println();
