@@ -13,6 +13,7 @@ public class SeriesCaracteres {
         char par, impar;
         par = '+';
         impar = '-';
+        System.out.println();
         for (int i = 0; i < nroTerminos; i++) {
             if (i % 2 == 0)
                 System.out.print(par + " ");
@@ -29,6 +30,7 @@ public class SeriesCaracteres {
         String num1, num2;
         num1 = "+";
         num2 = "-";
+        System.out.println();
         if (nroTerminos < 1)
             System.out.println(num1);
         else if (nroTerminos < 2)
@@ -51,6 +53,7 @@ public class SeriesCaracteres {
         char[] serie;
         serie = new char[] {'+','-','*','/'};
         // int residuo;
+        System.out.println();
         for (int i = 0; i < nroTerminos; i++) {
             // residuo = i % 4;
             System.out.print(serie[i % 4] + " ");
@@ -64,6 +67,7 @@ public class SeriesCaracteres {
     public void showSerie5For (int nroTerminos){
         String [] patron;
         patron = new String[] {"\\","|","/"," -"," | "};
+        System.out.println();
         for (int i = 0; i < nroTerminos; i++) {
             System.out.print(patron[i%5] + " ");
         }
@@ -76,6 +80,7 @@ public class SeriesCaracteres {
     public void showSerie6For(int nroTerminos){
         char abecedario;
         abecedario = 97;
+        System.out.println();
         for (int i = 0; i < nroTerminos; i++) {
             if (i == 26)
                 abecedario = 97;
@@ -93,6 +98,7 @@ public class SeriesCaracteres {
         int signosAlternos;
         abecedario = 97;
         signosAlternos = 0;
+        System.out.println();
         for (int i = 0; i < nroTerminos; i++) {
             if (i== 26)
                 abecedario = 97;
@@ -116,6 +122,7 @@ public class SeriesCaracteres {
     public void showSerie8For(int nroTerminos){
         char abecedario;
         abecedario = 97;
+        System.out.println();
         for (int i = 1; i < nroTerminos; i++) {
             if (i == 26)
                 abecedario = 97;
@@ -133,6 +140,7 @@ public class SeriesCaracteres {
     public void showSerie9For(int nroTerminos){
         int num1=0,num2=1,num3;
         char letra='c';
+        System.out.println();
         System.out.print("a "+"b ");
         for (int i = 1; i <= nroTerminos; i++) {
             num3=num1+num2;

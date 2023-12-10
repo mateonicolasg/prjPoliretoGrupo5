@@ -1,3 +1,8 @@
+/**
+ * Crear las siguientes ejercicios aplicando la recursividad
+ * @author: CodeMasters
+ * @version: 1.0
+ */
 public class EjerciciosRecursion {
     /**
      * <b>sumaRecursiva</b> muestra una recursividad para R02: Crear un metodo recursivo para obtener la suma(a,b).

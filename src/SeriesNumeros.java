@@ -13,6 +13,7 @@ public class SeriesNumeros {
         int termino1, termino2, termino3;
         termino1 = 0;
         termino2 = 1;
+        System.out.println();
         for (int i = 1; i <= nroTerminos; ++i) {
             if (i == 1) {
                 System.out.print(termino1 + " ");
@@ -28,7 +29,6 @@ public class SeriesNumeros {
             termino2 = termino3;
             System.out.print(termino3 + " ");
         }
-        System.out.println();
     }
     /**
      * <b>showSerie2For</b> muestra la serie usando el ciclo for S2:  1 0 3 0 5 0 7 0 9 ...
@@ -37,6 +37,7 @@ public class SeriesNumeros {
      */
     public void showSerie2For(int nroTerminos) {
         int valor = 1; // Iniciar con el primer valor
+        System.out.println();
         for (int i = 0; i < nroTerminos; i++) {
             System.out.print(valor + " ");
             if (i % 2 == 0) {
@@ -45,8 +46,6 @@ public class SeriesNumeros {
                 valor++; // Si el índice es impar, aumenta en 1
             }
         }
-        // Salto de línea al final de la serie
-        System.out.println();
     }
     /**
      * <b>showSerie3For</b> muestra la serie usando el ciclo for S3:  0/1  1/3  1/5  2/7  3/9   5/11  8/13  13/15 ...
@@ -62,6 +61,7 @@ public class SeriesNumeros {
         numeradores[1] = 1;
         denominadores[0] = 1;
         denominadores[1] = 3;
+        System.out.println();
         for (int i = 2; i < nroTerminos; i++) {
             numeradores[i] = numeradores[i - 1] + numeradores[i - 2];
             denominadores[i] = denominadores[i - 1] + 2;
@@ -77,6 +77,7 @@ public class SeriesNumeros {
      */
     public void showSerie4For(int nroTerminos){
         int numerador1=0,numerador2=1,denominadorpar=4;
+        System.out.println();
         switch(nroTerminos){
             case 1:
                     System.out.print("0/2 ");
@@ -102,6 +103,7 @@ public class SeriesNumeros {
      * showSerie9For 
      */
     public void showSerie9For(int NroTerminos) {
+        System.out.println();
         for (int i = 1, serie = 2; i <= NroTerminos; i++, serie *= 2) {
             System.out.print(serie+", ");
         }
@@ -112,6 +114,7 @@ public class SeriesNumeros {
      * showSerie10For 
      */    
     public void showSerie10For(int NroTerminos) {
+        System.out.println();
         for (int i = 1, serie = 3; i <= NroTerminos; i++, serie *= 3) {
             System.out.print(serie+", ");
         }
@@ -125,6 +128,7 @@ public class SeriesNumeros {
         int primerFactor, segundoFactor;
         primerFactor = 2;
         segundoFactor = 1;
+        System.out.println();
         for (int i = 0; i < nroTerminos; i++) 
             System.out.print(((primerFactor++)*(segundoFactor++)) + " ");
             // primerFactor++;

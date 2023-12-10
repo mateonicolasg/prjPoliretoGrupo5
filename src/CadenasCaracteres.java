@@ -12,6 +12,7 @@ public class CadenasCaracteres {
     public void showFrase5For (String frase){
         char [] fraseCaracteres;
         fraseCaracteres = frase.toCharArray();
+        System.out.println();
         for (int i = fraseCaracteres.length - 1; i >= 0; i--) {
             if (fraseCaracteres[i] == 'a' || fraseCaracteres[i] == 'e' || fraseCaracteres[i] == 'i' || fraseCaracteres[i] == 'o' || fraseCaracteres[i] == 'u'){
                 fraseCaracteres[i] = Character.toUpperCase(fraseCaracteres[i]);
@@ -29,6 +30,7 @@ public class CadenasCaracteres {
     public void showFrase6For (String frase){
         char [] fraseCaracteres;
         fraseCaracteres = frase.toCharArray();
+        System.out.println();
         for (int i = fraseCaracteres.length - 1; i >= 0; i--) {
             if (fraseCaracteres[i] == 'a' || fraseCaracteres[i] == 'e' || fraseCaracteres[i] == 'i' || fraseCaracteres[i] == 'o' || fraseCaracteres[i] == 'u')
                 System.out.print(fraseCaracteres[i]);
@@ -46,6 +48,7 @@ public class CadenasCaracteres {
     public void showFrase7For (String frase){
         char [] fraseCaracteres;
         fraseCaracteres = frase.toCharArray();
+        System.out.println();
         for (char fraseInvertida : fraseCaracteres) {
             if (fraseInvertida != 'j')
                 System.out.print(Character.toUpperCase(fraseInvertida));
@@ -59,6 +62,7 @@ public class CadenasCaracteres {
     public void showFrase9For (String frase){
         char [] fraseCaracteres;
         fraseCaracteres = frase.toCharArray();
+        System.out.println();
         for (int i = 0; i < fraseCaracteres.length; i++) {
             if (i % 2 == 0)
                 System.out.print(Character.toUpperCase(fraseCaracteres[i]));

@@ -15,6 +15,7 @@ public class Figuras {
      * showFigura3For 
      */
     public void showFigura3For(int nroNiveles){
+        System.out.println();
         for (int filas = 1; filas <= nroNiveles; filas++) {
             for (int nroCaracteres = 0; nroCaracteres < filas; nroCaracteres++) {
                 System.out.print("* ");
@@ -33,6 +34,7 @@ public class Figuras {
      * showFigura4For 
      */
     public void showFigura4For(int nroNiveles){
+        System.out.println();
         for (int filas = 1; filas <= nroNiveles; filas++) {
             for (int nroEspacios = nroNiveles; nroEspacios > filas; nroEspacios--) 
                 System.out.print("  ");
@@ -52,6 +54,7 @@ public class Figuras {
      * showFigura5For 
      */
     public void showFigura5For(int nroNiveles){
+        System.out.println();
         for (int filas = nroNiveles; filas > 0; filas--) {
             for (int espacio = nroNiveles; espacio > filas; espacio--) {
                 System.out.print(" ");
@@ -73,6 +76,7 @@ public class Figuras {
      * showFigura6For 
      */
     public void showFigura6For(int nroNiveles){
+        System.out.println();
         for (int filas = nroNiveles; filas > 0; filas--) {
             for (int espacio = 0; espacio < filas; espacio++) {
                 System.out.print(" ");
@@ -155,6 +159,7 @@ public class Figuras {
      */
     public void showFigura18For(int nroNiveles){
         int[][] arr = new int[nroNiveles][nroNiveles + 1];
+        System.out.println();
         for (int i = 0; i < nroNiveles; i++) {
             arr[i][0] = 1;
             for (int j = 1; j <= i; j++) {
@@ -181,6 +186,7 @@ public class Figuras {
      */
     public void showFigura19For(int nroNiveles) {
         int[][] arr = new int[nroNiveles][nroNiveles + 1];
+        System.out.println();
         for (int i = 0; i < nroNiveles; i++) {
             arr[i][0] = 1;
             for (int j = 1; j <= i; j++) {

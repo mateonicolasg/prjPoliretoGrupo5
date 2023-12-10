@@ -80,9 +80,9 @@ public class Loadings {
      * showLoading4
      */
     public void showLoading4() {
-        int retraso = 100; 
+        int retraso = 400; 
         String[] patron = {"0oo", "o0o", "oo0"};
-        
+        System.out.println();
         for (int i = 0; i <= 100; i++) {
             System.out.print("\r"  +patron[i % patron.length] + " " + i + "%" ); 
 
@@ -100,7 +100,7 @@ public class Loadings {
     public void showLoading5() {
         int retraso = 100;
         String[] punta = {">", "-"};
-
+        System.out.println();
         for (int i = 0; i <= 100; i++) {
             int numIguales = i / 5;
             int numEspacios = 20 - numIguales;
@@ -125,7 +125,7 @@ public class Loadings {
     public void showLoading6() {
         int retraso = 100;
         String barra = "<=>";
-
+        System.out.println();
         for (int i = 0; i <= 100; i++) {
             int posicionBarra = i / 5;
             int numEspaciosIzq = Math.min(posicionBarra, 20 - barra.length());
@@ -151,7 +151,7 @@ public class Loadings {
     public void showLoading7() {
         int retraso = 100; 
         String[] puntero = {"\\", "|", "/", "-"};
-
+        System.out.println();
         for (int i = 0; i <= 100; i++) {
             int numIguales = i / 5;
             int numEspacios = 20 - numIguales;
