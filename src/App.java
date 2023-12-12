@@ -28,7 +28,7 @@ public class App {
         SerieCaracteres9 serie9=new SerieCaracteres9();
         SerieNumero4 serieCuatro = new SerieNumero4();
         delays progressbar=new delays();
-        figuras f16yf17=new figuras();
+        figuras16y17 f16yf17=new figuras16y17();
         recursivo potencia=new recursivo();
 >>>>>>> 5bd291f3632029afa6569643025363b8737d4c28
         Figura3 oFigura3 = new Figura3();
@@ -291,9 +291,10 @@ public class App {
         // System.out.println();
         // oFigura19.figuras19DoWhile(nroNiveles);
 
-        System.out.print("Escriba una frase: ");
-        String frase = sc.nextLine();
+        // System.out.print("Escriba una frase: ");
+        // String frase = sc.nextLine();
 
+<<<<<<< HEAD
         System.out.println("C05: ");
         oCadenaCaracteres5.showFrase(frase);
         System.out.println();
@@ -351,20 +352,63 @@ public class App {
         // System.out.println("Loading07:");
         // System.out.println();
         // oLoading07.loading07();
+=======
+        // System.out.println("C05: ");
+        // oCadenaCaracteres5.showFrase(frase);
+        // System.out.println();
+
+        // System.out.println("C06: ");
+        // oCadenaCaracteres6.showFrase(frase);
+>>>>>>> 6a0fb2928e0a185c85d9e49f263f014f1c9f4eb4
         // System.out.println();
 >>>>>>> 5bd291f3632029afa6569643025363b8737d4c28
         
-        System.out.print("Introduce el valor de a: ");
-            int a = sc.nextInt();
+        // System.out.println("C07: ");
+        // oCadenaCaracteres7.showFrase(frase);
+        // System.out.println();
+        
+        // System.out.println("C09: ");
+        // oCadenaCaracteres9.showFrase(frase);
+        // System.out.println();
+        
+        // // System.out.println("Loading04:");
+        // // System.out.println();
+        // // oLoading04.loading04();
+        // // System.out.println();
 
-        System.out.print("Introduce el valor de b: ");
-            int b = sc.nextInt();
+        // // System.out.println("Loading05:");
+        // // System.out.println();
+        // // oLoading05.loading05();
+        // // System.out.println();
+
+        // // System.out.println("Loading06:");
+        // // System.out.println();
+        // // oLoading06.loading06();
+        // // System.out.println();
+
+        // // System.out.println("Loading07:");
+        // // System.out.println();
+        // // oLoading07.loading07();
+        // // System.out.println();
+        
+        // System.out.print("Introduce el valor de a: ");
+        //     int a = sc.nextInt();
+
+        // System.out.print("Introduce el valor de b: ");
+        //     int b = sc.nextInt();
 
         
+<<<<<<< HEAD
         System.out.println("Recursion02:");
         System.out.println("El resultado es: " + oRecursion02.sumaRecursiva(a, b));
         System.out.println();
         System.out.println("El resultado es: " + oRecursion03.recusion03(a, b));
 >>>>>>> d881961d94a5688c5b421d04249d171d729226ad
+=======
+        // System.out.println("Recursion02:");
+        // System.out.println("El resultado es: " + oRecursion02.sumaRecursiva(a, b));
+        // System.out.println();
+        // System.out.println("El resultado es: " + oRecursion03.recusion03(a, b));
+>>>>>>> 6a0fb2928e0a185c85d9e49f263f014f1c9f4eb4
     }
 }

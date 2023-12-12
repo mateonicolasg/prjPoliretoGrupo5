@@ -11,51 +11,45 @@ public class delays {
         System.out.println();
     }
 
-    public void presentarBarra(int progreso, int total){
-        int anchoBarra=20;
-        float ubicacionCaracter=(float)progreso/total;
-        int barraProgreso=(int)(anchoBarra*ubicacionCaracter);
-        System.out.print("[");
-        for (int i = 0; i < anchoBarra; i++) {
-            if (i<barraProgreso) {
-                System.out.print("#");
-            }
-            else{
-                System.out.print(" ");
-            }
+    
+    public static void progressPercentage(int remain, int total, int barSize) {
+        if (remain > total || barSize <= 0) {
+            throw new IllegalArgumentException("Invalid arguments");
         }
-        System.out.printf("] %3d%%\r",(ubicacionCaracter*100));
-        System.out.flush();
-    }
-    public static void progressPercentage(int remain, int total) {
-        if (remain > total) {
-            throw new IllegalArgumentException();
-        }
-        int maxBareSize = 10; 
-        int remainProcent = ((100 * remain) / total) / maxBareSize;
-        char defaultChar = '-';
+
+        int maxBarSize = barSize;
+        int remainProcent = ((100 * remain) / total) / (100 / maxBarSize);
+        char defaultChar = ' ';
         String icon = "*";
-        String bare = new String(new char[maxBareSize]).replace('\0', defaultChar) + "]";
+        String bare = new String(new char[maxBarSize]).replace('\0', defaultChar) + "]";
         StringBuilder bareDone = new StringBuilder();
         bareDone.append("[");
+        
         for (int i = 0; i < remainProcent; i++) {
             bareDone.append(icon);
         }
+        
         String bareRemain = bare.substring(remainProcent, bare.length());
-        System.out.print("\r" + bareDone + bareRemain + " " + remainProcent * 10 + "%");
+        System.out.print("\r" + bareDone + bareRemain + " " + remainProcent * (100 / maxBarSize) + "%");
+        
         if (remain == total) {
             System.out.print("\n");
         }
     }
+
     public void L02(){
-        for (int i = 0; i <= 200; i = i + 20) {
-            progressPercentage(i, 200);
+        int total = 200;
+        int barSize = 20;
+
+        for (int i = 0; i <= total; i = i + 20) {
+            progressPercentage(i, total, barSize);
+
             try {
                 Thread.sleep(500);
             } catch (Exception e) {
+                e.printStackTrace();
             }
         }
-    
     }
     
     
