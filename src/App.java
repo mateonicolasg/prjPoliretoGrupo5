@@ -16,7 +16,7 @@ public class App {
         SerieCaracteres9 serie9=new SerieCaracteres9();
         SerieNumero4 serieCuatro = new SerieNumero4();
         delays progressbar=new delays();
-        figuras f16yf17=new figuras();
+        figuras16y17 f16yf17=new figuras16y17();
         recursivo potencia=new recursivo();
         Figura3 oFigura3 = new Figura3();
         Figura4 oFigura4 = new Figura4();
@@ -214,55 +214,55 @@ public class App {
         // System.out.println();
         // oFigura19.figuras19DoWhile(nroNiveles);
 
-        System.out.print("Escriba una frase: ");
-        String frase = sc.nextLine();
+        // System.out.print("Escriba una frase: ");
+        // String frase = sc.nextLine();
 
-        System.out.println("C05: ");
-        oCadenaCaracteres5.showFrase(frase);
-        System.out.println();
-
-        System.out.println("C06: ");
-        oCadenaCaracteres6.showFrase(frase);
-        System.out.println();
-        
-        System.out.println("C07: ");
-        oCadenaCaracteres7.showFrase(frase);
-        System.out.println();
-        
-        System.out.println("C09: ");
-        oCadenaCaracteres9.showFrase(frase);
-        System.out.println();
-        
-        // System.out.println("Loading04:");
-        // System.out.println();
-        // oLoading04.loading04();
+        // System.out.println("C05: ");
+        // oCadenaCaracteres5.showFrase(frase);
         // System.out.println();
 
-        // System.out.println("Loading05:");
-        // System.out.println();
-        // oLoading05.loading05();
-        // System.out.println();
-
-        // System.out.println("Loading06:");
-        // System.out.println();
-        // oLoading06.loading06();
-        // System.out.println();
-
-        // System.out.println("Loading07:");
-        // System.out.println();
-        // oLoading07.loading07();
+        // System.out.println("C06: ");
+        // oCadenaCaracteres6.showFrase(frase);
         // System.out.println();
         
-        System.out.print("Introduce el valor de a: ");
-            int a = sc.nextInt();
+        // System.out.println("C07: ");
+        // oCadenaCaracteres7.showFrase(frase);
+        // System.out.println();
+        
+        // System.out.println("C09: ");
+        // oCadenaCaracteres9.showFrase(frase);
+        // System.out.println();
+        
+        // // System.out.println("Loading04:");
+        // // System.out.println();
+        // // oLoading04.loading04();
+        // // System.out.println();
 
-        System.out.print("Introduce el valor de b: ");
-            int b = sc.nextInt();
+        // // System.out.println("Loading05:");
+        // // System.out.println();
+        // // oLoading05.loading05();
+        // // System.out.println();
+
+        // // System.out.println("Loading06:");
+        // // System.out.println();
+        // // oLoading06.loading06();
+        // // System.out.println();
+
+        // // System.out.println("Loading07:");
+        // // System.out.println();
+        // // oLoading07.loading07();
+        // // System.out.println();
+        
+        // System.out.print("Introduce el valor de a: ");
+        //     int a = sc.nextInt();
+
+        // System.out.print("Introduce el valor de b: ");
+        //     int b = sc.nextInt();
 
         
-        System.out.println("Recursion02:");
-        System.out.println("El resultado es: " + oRecursion02.sumaRecursiva(a, b));
-        System.out.println();
-        System.out.println("El resultado es: " + oRecursion03.recusion03(a, b));
+        // System.out.println("Recursion02:");
+        // System.out.println("El resultado es: " + oRecursion02.sumaRecursiva(a, b));
+        // System.out.println();
+        // System.out.println("El resultado es: " + oRecursion03.recusion03(a, b));
     }
 }
