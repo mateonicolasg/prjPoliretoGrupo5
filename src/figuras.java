@@ -88,6 +88,85 @@ public class Figuras {
         }
     }
     /**
+     * <b>showFigura9For</b> muestra la figura usando el ciclo for F9:	
+                            ___   
+                        ___|   |___
+                    ___|	       |___
+                ___|		           |___
+            ___|			               |___ 
+     * @param nroNiveles: numero de niveles para la figura
+     * showFigura9For
+     */
+    public void showFigura9For(int nroNiveles){
+        // int especial = nroNiveles;
+        for (int espacio1 = 0; espacio1 < nroNiveles; espacio1++)
+            System.out.print("    ");
+        System.out.print("___");
+        System.out.println();
+        for (int filas = 0; filas < nroNiveles; filas++){
+            // especial--;
+            for (int espacio2 = 1; espacio2 < nroNiveles - filas; espacio2++)
+                System.out.print("    ");
+            System.out.print("___|");
+            for (int espacio3 = nroNiveles + 1; espacio3 > nroNiveles - filas; espacio3--)
+                System.out.print("   ");
+            for (int espacio4 = nroNiveles; espacio4 > nroNiveles - filas; espacio4--)
+                System.out.print("     ");
+            System.out.print("|___");
+            System.out.println();
+        }
+
+    }
+    /**
+     * <b>showFigura10For</b> muestra la figura usando el ciclo for F10:	
+            _+_
+                |_-_
+                    |_+_                        
+                        |_-_
+                            |_+_
+                                |
+     * @param nroNiveles: numero de niveles para la figura
+     * showFigura10For
+     */
+    public void showFigura10For (int nroNiveles){
+        // int especial = nroNiveles;
+        for (int filas = nroNiveles; filas > 0; filas--){
+            // --especial;
+            System.out.println(((filas%2 == 0) ? "_-_" : "_+_"));
+            System.out.print("   ");
+            for (int espacios = 0; espacios < nroNiveles - filas; espacios++)
+                System.out.print("    ");
+            // if (filas%2 == 0)
+            //     System.out.print("|_-_");
+            // else
+            //     System.out.print("|_+_");
+            if (filas > 1)
+                System.out.print("|");
+        }
+        System.out.println();
+    }
+    /**
+     * <b>showFigura11For</b> muestra la figura usando el ciclo for F11:	
+            | _ 
+               | _ _
+                    | _ _ _
+                           | _ _ _ _            
+                                    | _ _ _ _ _
+     * @param nroNiveles: numero de niveles para la figura
+     * showFigura11For
+     */  
+    public void showFigura11For (int nroNiveles){
+        StringBuilder caracteres = new StringBuilder("|");
+        StringBuilder espacios = new StringBuilder(""); 
+        StringBuilder addespacios = new StringBuilder("   ");
+        for (int filas = 0; filas < nroNiveles; filas++){
+            System.out.println(caracteres.append(" _"));
+            System.out.print(espacios.append(addespacios));
+            addespacios.append("  ");
+        }
+    }
+    
+    /**
      * <b>showFigura16For</b> muestra la figura usando el ciclo for F16:
             +				+
                 -		-

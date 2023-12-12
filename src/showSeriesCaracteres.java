@@ -1,3 +1,8 @@
+/**
+ * Presentar series de caracteres
+ * @author: CodeMasters
+ * @version: 1.0
+ */
 public class showSeriesCaracteres {
     SeriesCaracteres oSeriesCaracteres = new SeriesCaracteres();
     ControlDatos oControlDatos = new ControlDatos();
@@ -5,7 +10,10 @@ public class showSeriesCaracteres {
 
     int nroTerminos;
     int opcion;
-
+    /**
+     * <b>showMenu2</b> muestra el menú de las series de caracteres
+     * showMenu2 
+     */
     public void showMenu2(){
         do{     
             System.out.println();

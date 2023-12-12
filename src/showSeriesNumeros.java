@@ -1,3 +1,8 @@
+/**
+ * Presentar series de números
+ * @author: CodeMasters
+ * @version: 1.0
+ */
 public class showSeriesNumeros {
     SeriesNumeros oSeriesNumeros = new SeriesNumeros();
     ControlDatos oControlDatos = new ControlDatos();
@@ -5,7 +10,10 @@ public class showSeriesNumeros {
     
     int nroTerminos;
     int opcion;
-
+    /**
+     * <b>showMenu1</b> muestra el menú de las series de números
+     * showMenu1
+     */
     public void showMenu1(){
         do{     
             System.out.println();

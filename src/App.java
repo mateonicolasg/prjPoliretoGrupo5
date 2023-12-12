@@ -1,6 +1,9 @@
-import java.io.IOException;
+/**
+ * Presentar Poliretos
+ * @author: CodeMasters
+ * @version: 1.0
+ */
 import java.util.Scanner;
-
 public class App {
     public static Scanner sc = new Scanner(System.in);
 
@@ -22,6 +25,7 @@ public class App {
         showSeriesCaracteres oShowSeriesCaracteres = new showSeriesCaracteres();
         showFiguras oShowFiguras = new showFiguras();
         showCadenasCaracteres oCadenasCaracteres = new showCadenasCaracteres();
+        showArrays oArrays = new showArrays();
         showLoadings oLoadings = new showLoadings();
         showEjerciciosRecursion oEjerciciosRecursion = new showEjerciciosRecursion();
         int opcion;
@@ -54,7 +58,7 @@ public class App {
                     oCadenasCaracteres.showMenu4();
                     break;
                 case 5:
-
+                    oArrays.showMenu5();
                     break;
                 case 6:
                     oLoadings.showMenu6();

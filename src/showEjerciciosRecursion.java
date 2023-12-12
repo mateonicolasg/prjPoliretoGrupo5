@@ -1,10 +1,18 @@
+/**
+ * Presentar ejercicios de recursividad
+ * @author: CodeMasters
+ * @version: 1.0
+ */
 public class showEjerciciosRecursion {
     EjerciciosRecursion oEjerciciosRecursion = new EjerciciosRecursion();
     App oApp = new App();
     
     int a, b;
     int opcion;
-
+    /**
+     * <b>showMenu7</b> muestra el menú de los ejercicios de recurividad
+     * showMenu7
+     */
     public void showMenu7(){
         do{     
             System.out.println();
@@ -45,6 +53,12 @@ public class showEjerciciosRecursion {
                     b = App.sc.nextInt();
                     System.out.println();     
                     System.out.print("El resultado es: " + oEjerciciosRecursion.potenciaRecursiva(a, b));
+                    break;
+                case 5:
+                    System.out.print("Introduce un número: ");
+                    b = App.sc.nextInt();
+                    System.out.println("Conteo progresivo hasta "+ b );     
+                    oEjerciciosRecursion.conteoProgresivoRecursivo(1, b);
                     break;
                 case 0:
                     System.out.println();

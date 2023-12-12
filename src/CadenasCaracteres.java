@@ -4,6 +4,17 @@
  * @version: 1.0
  */
 public class CadenasCaracteres {
+     /**
+     * <b>showFrase4For</b> muestra la cadena usando el ciclo for C04: Pedir una frase y una letra, eliminar la letra ingresada de la frase. 
+     * @param frase: frase para eliminar la letra que el usuario escoja
+     * @param letra: letra que se eliminará en la frase
+     * showFrase4For
+     */
+    public void showFrase4For (String frase, char letra){
+        String fraseSinLetra = frase.replace(letra, ' ');
+        System.out.println();
+        System.out.print(fraseSinLetra);
+    }   
     /**
      * <b>showFrase5For</b> muestra la cadena usando el ciclo for C05: Pedir una frase y presentar la invertida con las vocales en mayusculas. 
      * @param frase: frase para invertir con las vocales en mayúsculas

@@ -45,5 +45,16 @@ public class EjerciciosRecursion {
             return base * potenciaRecursiva(base, exponente - 1);
         }
     }
-
+    /**
+     * <b>conteoProgresivoRecursivo</b> muestra una recursividad para R05) crear un metodo recursivo para obtener la conteoProgresivoHasta(n)
+     * @param inicio: Número inicial
+     * @param fin: Número hasta el cual se procede a realizar el conteo
+     * conteoProgresivoRecursivo
+     */
+    public void conteoProgresivoRecursivo (int inicio, int fin){
+        if (inicio <= fin) {
+            System.out.println(inicio);
+            conteoProgresivoRecursivo(inicio + 1, fin);
+        }
+    }
 }

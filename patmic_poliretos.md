@@ -56,28 +56,6 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
                 ___|
             ___|
 
-	F9:
-                            ___   
-                        ___|   |___
-                    ___|	   	   |___
-                ___|		   		   |___
-            ___|			   			   |___     
-
-	F10:
-            _+_
-                |_-_
-                    |_+_                        
-                        |_-_
-                            |_+_
-                                |
-
-    F11:
-            | _ 
-               | _ _
-                    | _ _ _
-                           | _ _ _ _            
-                                    | _ _ _ _ _
-                   
 	F12:
             ...
             123456789
@@ -134,11 +112,6 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             Ejemplo, frase: ballena azul  
                     vocal : a                           Edison Vera
                     salida: b ll n   z l
-
-	C04)    Pedir una frase y una letra, eliminar la letra ingresada de la frase. 
-            Ejemplo, frase: ballena azul  
-                    letra : l                           
-                    salida: ba  ena azu 
 	
 	C08)    Anagramas de palabras. 
             Se forman cuando se utilizan todas las letras de una palabra pero modificando el orden.
@@ -160,18 +133,6 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             [==========>    ]  75% Carmeli
             [=======>       ]  50% Altam
             [===>           ]  25% Pe
-
-    A02)    Crear una matriz solicitando el tamaño y caracter para almacenar la iniciales de su nombre y apellido y presentar la matriz
-            Ejemplo:    Mi nombre es Patricio Paccha => PP    
-            Ingrese el tamaño: 5
-            Ingrese caracter : *
-
-            *****   *****      
-            *   *   *   *                                       
-            *****   *****      
-            *       *                               
-            *       *  
-
 
     A03)    Dibujar un plano de coordenadas positivo y graficar f(x) = 2x usando como caracteres las letras de su nombre
             Ejemplo:    patmic
@@ -196,18 +157,6 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
                                     i
                                         o
 
-    A05)    Crear un matriz cuadrada del tamaño de su nombre, colocar cada letra de sus nombres completos de forma randomica/aleatorio.
-            En el caso que conincidan las posiciones poner un *. 
-            Para visulizar el proceso usar un delay 
-
-            P                           P
-                a                   a
-                M   *   i   h   c   e   l               
-                        r   c
-                        h   i
-            A   n   *   a   *   *   a   r
-                                    i
-                                        o
 
 >> Loading, Usar el delay para animar      
     L08) Pedir el nombre y apellidos y realizar la carga mostrando letra a letra hasta el 100% 
@@ -226,8 +175,7 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
         ooO-(_)-Ooo                                     David Unaucho
 
 >> Recursion
-    R01) crear un metodo recursivo para obtener factorial(n)  Edison Vera
-    R05) crear un metodo recursivo para obtener la conteoProgregresivoHasta(n) / imprimir el avance   
+    R01) crear un metodo recursivo para obtener factorial(n)  Edison Vera   
     R06) crear un metodo recursivo para obtener la conteoRegresivo(n)  hasta 0 / imprimir el avance     Estefano Santacruz
     
     Extra si usa memoria retenida en la recursiones 

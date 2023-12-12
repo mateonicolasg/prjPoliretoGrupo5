@@ -1,10 +1,18 @@
+/**
+ * Presentar Loadings
+ * @author: CodeMasters
+ * @version: 1.0
+ */
 public class showLoadings {
     Loadings oLoadings = new Loadings();
     App oApp = new App();
     
     // String frase;
     int opcion;
-
+    /**
+     * <b>showMenu6</b> muestra el menú de los loadings
+     * showMenu6 
+     */
     public void showMenu6(){
         do{     
             System.out.println();
