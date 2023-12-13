@@ -31,14 +31,12 @@ public class showCadenasCaracteres {
                 case 1:
                     App.sc.nextLine();
                     frase = oControlDatos.leerFrase(); 
-                    int contadorVocales = oCadenasCaracteres.showFrase1(frase);
-                    System.out.println("La frase tiene " + contadorVocales + " vocales.");
+                    oCadenasCaracteres.showFrase1For(frase);
                     break;
                 case 2:
                     App.sc.nextLine();
                     frase = oControlDatos.leerFrase(); 
-                    int contadorLetras = oCadenasCaracteres.showFrase2For(frase);
-                    System.out.println("La frase tiene " + contadorLetras + " letras.");
+                    oCadenasCaracteres.showFrase2For(frase);
                     break;
                 case 4:
                     App.sc.nextLine();

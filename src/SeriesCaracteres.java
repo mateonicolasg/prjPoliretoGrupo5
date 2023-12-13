@@ -53,17 +53,27 @@ public class SeriesCaracteres {
      * showSerie3For 
      */ 
     public void showSerie3For (int nroTerminos){
-        int cantidad = 1;
-        int contador = 0;
         char num1 = '+';
-        for (int i = 1; contador < nroTerminos; i += cantidad) {
-            for (int j = 0; j < i && contador < nroTerminos; j++) {
-                System.out.print(num1);
+        int num = 2;
+        int contador;
+        while (nroTerminos > 0) {
+            contador = 0;
+            for (int i = 2; i <= num / 2; ++i) {
+                if (num % i == 0) {
+                    contador = 1;
+                    break;
+                }
             }
-            contador++;
-            cantidad++;
-            System.out.print(" ");
+            if (contador == 0) {
+                --nroTerminos;
+                for (int j = 0; j < num; ++j) {
+                    System.out.print(num1);
+                }
+                System.out.print(" ");
+            }
+            ++num;
         }
+        System.out.println();
     }
     /**
      * <b>showSeri4eFor</b> muestra la serie usando el ciclo for S4:  +  -  *  /  +  -  *  / +  -  *  /  ...

@@ -5,59 +5,29 @@
  */
 public class CadenasCaracteres {
      /**
-     * <b>showFrase1</b> muestra el número de vocales de una cadena C01) Pedir una frase y contador las vocales. 
+     * <b>showFrase1For</b> muestra el número de vocales de una cadena usando el ciclo forC01) Pedir una frase y contador las vocales. 
      * @author: David Unaucho
-     * @param frase: frase para contar las vocales 
-     * @return Integer
-     * showFrase1
+     * @param frase: frase para contar las vocales
+     * showFrase1For
      */
-    public  int showFrase1(String frase) {
+    public void showFrase1For(String frase) {
         int contador = 0;
-        int vocalesA = 0, vocalesE = 0, vocalesI = 0, vocalesO = 0, vocalesU = 0;
         for (int i = 0; i < frase.length(); i++) {
-            char caracter = frase.charAt(i);
-            switch (caracter) {
-                case 'a':
-                    vocalesA++;
-                    contador++;
-                    break;
-                case 'e':
-                    vocalesE++;
-                    contador++;
-                    break;
-                case 'i':
-                    vocalesI++;
-                    contador++;
-                    break;
-                case 'o':
-                    vocalesO++;
-                    contador++;
-                    break;
-                case 'u':
-                    vocalesU++;
-                    contador++;
-                    break;
-                default:
-                    // Ignorar otros caracteres
-                    break;
+            char caracter = Character.toLowerCase(frase.charAt(i));
+            if (caracter == 'a' || caracter == 'e' || caracter == 'i' || caracter == 'o' || caracter == 'u') {
+                contador++;
             }
         }
-        // Imprimir el contador de cada vocal
-        System.out.println("Vocal A: " + vocalesA);
-        System.out.println("Vocal E: " + vocalesE);
-        System.out.println("Vocal I: " + vocalesI);
-        System.out.println("Vocal O: " + vocalesO);
-        System.out.println("Vocal U: " + vocalesU);
-        return contador;
+        System.out.println("El número de vocales en la frase es: " + contador);
+        
     }
      /**
      * <b>showFrase2For</b> muestra el número de letras de una cadena usando el ciclo for C02) Pedir una frase y contador las letras. 
      * @author: David Unaucho
      * @param frase: frase para contar las letras 
-     * @return Integer
      * showFrase2For
      */
-    public  int showFrase2For(String frase) {
+    public void showFrase2For(String frase) {
         int contador = 0;
         for (int i = 0; i < frase.length(); i++) {
             char caracter = frase.charAt(i);
@@ -65,7 +35,7 @@ public class CadenasCaracteres {
                 contador++;
             }
         }
-        return contador;
+        System.out.println("La frase tiene " + contador + " letras.");
     }
      /**
      * <b>showFrase4For</b> muestra la cadena usando el ciclo for C04: Pedir una frase y una letra, eliminar la letra ingresada de la frase.

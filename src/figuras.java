@@ -15,18 +15,18 @@ public class Figuras {
      * @param nroNiveles: numero de niveles para la figura
      * showFigura1For 
      */
-    public void showFigura1For(int nroNiveles){
-        for (int i = 1; i <= nroNiveles; i++) {
-            for (int j = 1; j <= nroNiveles; j++) {
-                if (i == 1 || i == nroNiveles || j == 1 || j == nroNiveles || i == (nroNiveles / 2) + 1) {
+    public  void showFigura1For(int nroNiveles) {
+        for (int i = 0; i < nroNiveles; i++) {
+            for (int j = 0; j < nroNiveles; j++) {
+                if (i == 0 || i == nroNiveles - 1 || j == 0 || j == nroNiveles - 1) {
                     System.out.print("* ");
                 } else {
-                    System.out.print("  ");
+                    System.out.print("  "); // Espacio para el interior
                 }
             }
-    
-          }
-       }
+            System.out.println();
+        }
+    }
     /**
      * <b>showFigura2For</b> muestra la figura usando el ciclo for F2:
         * + * + *
@@ -39,16 +39,19 @@ public class Figuras {
      * showFigura2For 
      */
        public void showFigura2For(int nroNiveles){
-            for (int i = 1; i <= nroNiveles; i++) {
-                for (int j = 1; j <= nroNiveles; j++) {
-                    if ((i == 1 || i == nroNiveles || i == (nroNiveles / 2) + 1) && (j % 2 != 0)) {
-                        System.out.print("* ");
-                    } else if ((j == 1 || j == nroNiveles) && (i % 2 == 0)) {
-                        System.out.print("+ ");
+            for (int i = 0; i < nroNiveles; i++) {
+                for (int j = 0; j < nroNiveles; j++) {
+                    if (i == 0 || i == nroNiveles - 1 || j == 0 || j == nroNiveles - 1) {
+                        if ((i + j) % 2 == 0) {
+                            System.out.print("* ");
+                        } else {
+                            System.out.print("+ ");
+                        }
                     } else {
-                        System.out.print("  ");
+                        System.out.print("  "); // Espacio para el interior
                     }
                 }
+                System.out.println();
             }
         }
     /**
