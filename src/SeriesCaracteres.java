@@ -5,7 +5,8 @@
  */
 public class SeriesCaracteres {
     /**
-     * <b>showSerie1For</b> muestra la serie usando el ciclo for 1:  + - + - + - + ... 
+     * <b>showSerie1For</b> muestra la serie usando el ciclo for 1:  + - + - + - + ...
+     * @author: Mateo Simbaña 
      * @param nroTerminos: numero de terminos para la serie
      * showSerie1For 
      */
@@ -23,6 +24,7 @@ public class SeriesCaracteres {
     }
     /**
      * <b>showSerie2For</b> muestra la serie usando el ciclo for S2:  + + ++ +++ +++++ ++++++++ +++++++++++++ ...
+     * @author: Mateo Simbaña
      * @param nroTerminos: numero de terminos para la serie
      * showSerie2For 
      */
@@ -45,7 +47,27 @@ public class SeriesCaracteres {
             }
     }
     /**
+     * <b>showSerie3For</b> muestra la serie usando el ciclo for S3:  ++ +++ +++++ +++++++ +++++++++++ +++++++++++++ ...
+     * @author: David Unaucho
+     * @param nroTerminos: numero de terminos para la serie
+     * showSerie3For 
+     */ 
+    public void showSerie3For (int nroTerminos){
+        int cantidad = 1;
+        int contador = 0;
+        char num1 = '+';
+        for (int i = 1; contador < nroTerminos; i += cantidad) {
+            for (int j = 0; j < i && contador < nroTerminos; j++) {
+                System.out.print(num1);
+            }
+            contador++;
+            cantidad++;
+            System.out.print(" ");
+        }
+    }
+    /**
      * <b>showSeri4eFor</b> muestra la serie usando el ciclo for S4:  +  -  *  /  +  -  *  / +  -  *  /  ...
+     * @author: Mateo Simbaña
      * @param nroTerminos: numero de terminos para la serie
      * showSerie4For 
      */
@@ -61,6 +83,7 @@ public class SeriesCaracteres {
     }
     /**
      * <b>showSerie5For</b> muestra la serie usando el ciclo for S5:  \  |  /    -   |   \  |  /    -   |    \  |  /    -   |  ....
+     * @author: Mateo Simbaña
      * @param nroTerminos: numero de terminos para la serie
      * showSerie5For 
      */
@@ -74,6 +97,7 @@ public class SeriesCaracteres {
     }
     /**
     * <b>showSerie6For</b> muestra la serie usando el ciclo for S6:  a  b   c   d   e   f   g   h   ...
+    * @author: Mateo Simbaña
     * @param nroTerminos: numero de terminos para la serie
     * showSerie6For 
     */
@@ -90,6 +114,7 @@ public class SeriesCaracteres {
     }
     /**
     * <b>showSerie7For</b> muestra la serie usando el ciclo for  S6B:  a  +   c   -   e   +   g   -   ...
+    * @author: Mateo Simbaña
     * @param nroTerminos: numero de terminos para la serie
     * showSerie7For 
     */
@@ -116,6 +141,7 @@ public class SeriesCaracteres {
     }
     /**
     * <b>showSerie8For</b> muestra la serie usando el ciclo for S7:  aa   bbbb  cccccc  dddddddd    ...
+    * @author: Mateo Simbaña
     * @param nroTerminos: numero de terminos para la serie
     * showSerie8For 
     */
@@ -134,15 +160,15 @@ public class SeriesCaracteres {
     }
     /**
     * <b>showSerie9For</b> muestra la serie usando el ciclo for S9: a  b  c  dd  eee  fffff  gggggggg ...
+    * @author: Francisco Negrete
     * @param nroTerminos: numero de terminos para la serie
     * showSerie9For 
     */
     public void showSerie9For(int nroTerminos){
         int num1=0,num2=1,num3;
         char letra='c';
-        System.out.println();
-        System.out.print("a "+"b ");
-        for (int i = 1; i <= nroTerminos; i++) {
+        System.out.print("a "+" b ");
+        for (int i = 1; i <= nroTerminos-2; i++) {
             num3=num1+num2;
             for (int j = 0; j < num3; j++) {
                 System.out.print(" "+letra);
@@ -150,6 +176,24 @@ public class SeriesCaracteres {
             letra++;
            num1=num2;
            num2=num3;
+           System.out.print(" ");
+        }
+    }
+    /**
+    * <b>showSerie10For</b> muestra la serie usando el ciclo for S10:  a  bbb  ccccc  ddddddd eeeeeeeee...            
+    * @author: Edison Vera
+    * @param nroTerminos: numero de terminos para la serie
+    * showSerie9For 
+    */
+    public void showSerie10For(int nroTerminos){
+        int codigoA = 97;
+        for(int j=1; j<nroTerminos * 2; j+=2){
+            
+            for (int i = 0; i < j; i++) {
+                System.out.print((char)codigoA);
+            }
+            System.out.print(" ");
+            codigoA++;
         }
     }
 }

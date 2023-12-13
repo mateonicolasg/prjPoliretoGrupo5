@@ -1,5 +1,14 @@
 public class Array {
+    /**
+     * <b>Array2</b> muestra la serie usando el ciclo for A02) Crear una matriz solicitando el tamaño y caracter para almacenar la iniciales de su nombre y apellido y presentar la matriz
+     * @author: Mateo Simbaña
+     * @param tamaño: tamaño de las iniciales del nombre y apellido del autor
+     * @param caracter: caracter con el que se imprimirán las iniciales 
+     * Array2
+     */
     public void Array2 (int tamaño, char caracter){
+        System.out.println("Mi nombre es: " + App.YELLOW + "Mateo Simbaña" + App.RESET);
+        System.out.println("Iniciales de mi nombre y apellido con " + caracter + ": ");
         char matrizM [][] = new char [tamaño][tamaño];
         char matrizS [][] = new char[tamaño][tamaño];
         for (int fila = 0; fila < tamaño; fila++) {
@@ -31,8 +40,56 @@ public class Array {
             System.out.println();
         }  
     }
-
+    /**
+     * <b>Array3</b> muestra la serie A03) Dibujar un plano de coordenadas positivo y graficar f(x) = 2x usando como caracteres las letras de su nombre
+     * @author: Edison Vera
+     * Array3
+     */
+    public void Array3(){
+        int guion = 45; // Guion
+        for (int i=12; i>0; i--){
+            if(i==12){
+                System.out.println(i + " |               n");
+            }
+            if(i==10){
+                System.out.println(i+ " |            o");
+            }
+            if(i==8){
+                System.out.println(i+ "  |         s");
+            }
+            if(i==6){
+                System.out.println(i+ "  |      i");
+            }
+            if(i==4){
+                System.out.println(i+ "  |   d");
+            }
+            if(i==2){
+                System.out.println(i+ "  |e");
+            }
+            if(i % 2 !=0){
+                if(i>9){
+                    System.out.println(i + " |");
+                }
+                else{
+                    System.out.println(i + "  |");
+                }
+            }
+            
+        }
+        System.out.print("   ");
+        for(int j=0; j<18; j++){
+            System.out.print((char)guion);
+        }
+        System.out.println();
+    }
+    /**
+     * <b>Array5</b> muestra la serie usando el ciclo foreach A05) Crear un matriz cuadrada del tamaño de su nombre, colocar cada letra de sus nombres completos de forma randomica/aleatorio.
+     * @author: Mateo Simbaña
+     * Array5
+     */
     public void Array5(){
+        System.out.println("Mis nombres completos son: " + App.GREEN + "Mateo Nicolas Simbaña Guarnizo" + App.RESET);
+        System.out.println("A continuación se muestra una matriz cuadrada del tamaño de mi nombre: ");
         char [] nombresCompletos = {'M','a','t','e','o','N','i','c','o','l','a','s','S','i','m','b','a','n','a','G','u','a','r','n','i','z','o'};
         int tamaño = 5;
         

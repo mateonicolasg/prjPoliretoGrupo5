@@ -7,7 +7,8 @@ import java.util.Collections;
  */
 public class Loadings {
     /**
-     * <b>showLoading1</b> muestra la serie usando el ciclo for L01) Indicador de carga desde 0  a 100% usar los signos \|/-| para simular un movimiento rotacional de carga 0% hasta 100%   
+     * <b>showLoading1</b> muestra la serie usando el ciclo for L01) Indicador de carga desde 0  a 100% usar los signos \|/-| para simular un movimiento rotacional de carga 0% hasta 100% 
+     * @author: Francisco Negrete  
      * showLoading1
      */
     public void showLoading1(){
@@ -20,63 +21,78 @@ public class Loadings {
         }
         System.out.println();
     }
-
-    public static void progressPercentage(int remain, int total) {
-        if (remain > total) {
-            throw new IllegalArgumentException();
-        }
-        int maxBareSize = 10; 
-        int remainProcent = ((100 * remain) / total) / maxBareSize;
-        char defaultChar = '-';
-        String icon = "*";
-        String bare = new String(new char[maxBareSize]).replace('\0', defaultChar) + "]";
-        StringBuilder bareDone = new StringBuilder();
-        bareDone.append("[");
-        for (int i = 0; i < remainProcent; i++) {
-            bareDone.append(icon);
-        }
-        String bareRemain = bare.substring(remainProcent, bare.length());
-        System.out.print("\r" + bareDone + bareRemain + " " + remainProcent * 10 + "%");
-        if (remain == total) {
-            System.out.print("\n");
-        }
-    }
     /**
      * <b>showLoading2</b> muestra la serie usando el ciclo for L02) Pedir un caracter para la simular la carga y la logitud de la barra es de 20 caracteres   
+     * @author: Francisco Negrete
      * showLoading2
      */
     public void showLoading2(){
-        for (int i = 0; i <= 200; i = i + 20) {
-            progressPercentage(i, 200);
+        int longitudBarra = 20;
+        int porcentaje = 0;
+
+        while (porcentaje <= 100) {
+            System.out.print("[");
+            for (int i = 0; i < longitudBarra; i++) {
+                if (i < (porcentaje * longitudBarra / 100)) {
+                    System.out.print("#");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("] " + porcentaje + "%  ");
+
             try {
-                Thread.sleep(500);
-            } catch (Exception e) {
+                Thread.sleep(100); 
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+
+            System.out.print("\r");
+
+            porcentaje++;
+
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
         }
     }
     /**
      * <b>showLoading3</b> muestra la serie usando el ciclo for L03) Pedir un caracter que se desplaza de izquierda a derecha en una la barra es de 20 caracteres 
+     * @author: Francisco Negrete
      * showLoading3
      */
     public void showLoading3(){
-        System.out.println();
-        char caracterDesplazamiento='-';
-        System.out.print("Progreso de carga: [");
-
-        for (int i = 1; i <= 20; i++) {
-            System.out.print(" ");
+        int longitudBarra = 20;
+        int porcentaje = 0;
+        while (porcentaje <= 100) {
+            System.out.print("[");
+            for (int i = 0; i < longitudBarra; i++) {
+                if (i == (porcentaje * longitudBarra / 100)) {
+                    System.out.print("-");
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            System.out.print("] " + porcentaje + "%");
             try {
-                Thread.sleep(500); 
+                Thread.sleep(100); 
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }
-            System.out.print(caracterDesplazamiento + "\b"); 
+            System.out.print("\r");
+            porcentaje++;
+            try {
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
-
-        System.out.println("] 100%");
     }
     /**
      * <b>showLoading4</b> muestra la serie usando el ciclo for L04) Waiting que inicia en 0  a 100% usar los signos o0o para simular un movimiento de ida y vuelta en el mismo puesto 
+     * @author: Matheus Velasco
      * showLoading4
      */
     public void showLoading4() {
@@ -95,6 +111,7 @@ public class Loadings {
     }
     /**
      * <b>showLoading5</b> muestra la serie usando el ciclo for L05) Crear una barra de 20 caracteres, la barra avanza cambiando la punta entre > - 
+     * @author: Matheus Velasco
      * showLoading5
      */
     public void showLoading5() {
@@ -120,6 +137,7 @@ public class Loadings {
     }
     /**
      * <b>showLoading6</b> muestra la serie usando el ciclo for L06) Crear una barra es de 20 caracteres, la barra <=> se desplaza de izquierda a derecha 
+     * @author: Matheus Velasco
      * showLoading6
      */
     public void showLoading6() {
@@ -146,6 +164,7 @@ public class Loadings {
     }
     /**
      * <b>showLoading7</b> muestra la serie usando el ciclo for L07) Crear una barra es de 20 caracteres, la barra avanza cambiando la punta con movimiento rotacional signos \|/-| 
+     * @author: Matheus Velasco
      * showLoading7
      */
     public void showLoading7() {
@@ -164,6 +183,46 @@ public class Loadings {
 
             try {
                 Thread.sleep(retraso); 
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+    /**
+     * <b>showLoading10</b> muestra la serie usando el ciclo for L10) Desplazar la figura a la derecha y regresar
+           \|||/
+           (> <)       
+        ooO-(_)-Ooo                                    
+     * @author: David Unaucho
+     * showLoading10
+     */
+    public void showLoading10() {
+        moverFiguraDerecha();
+        moverFiguraIzquierda();
+    }
+
+    public  void moverFiguraDerecha() {
+        for (int i = 0; i < 10; i++) {
+            for (int j = 0; j < i; j++) {
+                System.out.print(" "); // Imprimir espacios en blanco para desplazar a la derecha
+            }
+            System.out.println("\\|||/");
+            try {
+                Thread.sleep(200); // Retraso para visualizar el movimiento
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    public  void moverFiguraIzquierda() {
+        for (int i = 10; i > 0; i--) {
+            for (int j = i; j > 1; j--) {
+                System.out.print(" "); // Imprimir espacios en blanco para desplazar a la izquierda
+            }
+            System.out.println("(< >)");
+            try {
+                Thread.sleep(200); // Retraso para visualizar el movimiento
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

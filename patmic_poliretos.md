@@ -26,59 +26,8 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 
 >> Series de caracteres: 
 
-    S3:  ++	 +++ +++++ +++++++ +++++++++++ +++++++++++++ ...    David Unaucho
 
 >> Figuras: se debe pedir tamaño/niveles
-
-    F1:     * * * * *
-            *       *
-            *       *  
-            *       *           David Unaucho
-            * * * * *
-
-    F2:     * + * + *
-            +       +           David Unaucho
-            *       *   
-            +       +
-            * + * + *
-
-	F7: 
-            ___
-                |___
-                    |___
-                        |___
-                            |___            Edison Vera
-    
-    F8:
-                            ___
-                        ___|
-                    ___|                    Edison Vera
-                ___|
-            ___|
-
-	F12:
-            ...
-            123456789
-            12345678
-            1234567
-            123456
-            12345
-            1234
-            123
-            12                  Edison Vera
-            1
-
-	F13:
-            1
-            12
-            123
-            1234
-            12345               Edison Vera
-            123456
-            1234567
-            12345678
-            123456789
-            ...
 
     F14:
                         1
@@ -99,14 +48,6 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             ....
 
 >> Cadena de caracteres:
-
-	C01)    Pedir una frase y contador las vocales. 
-            Ejemplo, frase: ballena                     David Unaucho
-                    salida: tiene 3 vocales
-
-	C02)    Pedir una frase y contador las letras.  
-            Ejemplo, frase : ballena                    David Unaucho
-                    salida: tiene 4 letras
 
 	C03)    Pedir una frase y una vocal, eliminar la vocal ingresada de la frase. 
             Ejemplo, frase: ballena azul  
@@ -145,7 +86,6 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             1 |  p
             0 |______________________
             
-
     A04)    Crear un matriz donde forme una X con su nombre y apellido
 
             P                           P
@@ -168,11 +108,6 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 		 	r				20%
 		        o       	50%                         Estefano Santacruz
 		               a    100%
-
-	L10) Desplazar la figura a la derecha y regresar
-           \|||/
-           (> <)       
-        ooO-(_)-Ooo                                     David Unaucho
 
 >> Recursion
     R01) crear un metodo recursivo para obtener factorial(n)  Edison Vera   

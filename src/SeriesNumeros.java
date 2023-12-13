@@ -6,6 +6,7 @@
 public class SeriesNumeros {
     /**
      * <b>showSerie1For</b> muestra la serie usando el ciclo for S1:  0 1 1 2 3 5 8 13 ...
+     * @author: David Unaucho
      * @param nroTerminos: numero de terminos para la serie
      * showSerie1For 
      */
@@ -32,6 +33,7 @@ public class SeriesNumeros {
     }
     /**
      * <b>showSerie2For</b> muestra la serie usando el ciclo for S2:  1 0 3 0 5 0 7 0 9 ...
+     * @author: David Unaucho
      * @param nroTerminos: numero de terminos para la serie
      * showSerie2For 
      */
@@ -49,6 +51,7 @@ public class SeriesNumeros {
     }
     /**
      * <b>showSerie3For</b> muestra la serie usando el ciclo for S3:  0/1  1/3  1/5  2/7  3/9   5/11  8/13  13/15 ...
+     * @author: Germán Vanegas
      * @param nroTerminos: numero de terminos para la serie
      * showSerie3For 
      */
@@ -72,6 +75,7 @@ public class SeriesNumeros {
     }
     /**
      * <b>showSerie4For</b> muestra la serie usando el ciclo for S4:  0/2  1/4  1/6  2/8  3/10  5/12  8/14  13/16 ...
+     * @author: Francisco Negrete
      * @param nroTerminos: numero de terminos para la serie
      * showSerie4For 
      */
@@ -99,6 +103,7 @@ public class SeriesNumeros {
     }
     /**
      * <b>showSerie9For</b> muestra la serie usando el ciclo for S9:  2, 4, 8, 16, 32, 64, 128, 256, ...
+     * @author: Matheus Velasco
      * @param nroTerminos: numero de terminos para la serie
      * showSerie9For 
      */
@@ -110,6 +115,7 @@ public class SeriesNumeros {
     }
     /**
      * <b>showSerie10For</b> muestra la serie usando el ciclo for S10: 3, 9, 27, 81, 243, 729, 2187, ...
+     * @author: Matheus Velasco 
      * @param nroTerminos: numero de terminos para la serie
      * showSerie10For 
      */    
@@ -121,6 +127,7 @@ public class SeriesNumeros {
     }
     /**
      * <b>showSerie12For</b> muestra la serie usando el ciclo for S12: 2  6   12  20  30  42  56  72  ...
+     * @author: Mateo Simbaña
      * @param nroTerminos: numero de terminos para la serie
      * showSerie12For 
      */

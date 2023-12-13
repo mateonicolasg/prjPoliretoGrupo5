@@ -5,7 +5,71 @@
  */
 public class CadenasCaracteres {
      /**
-     * <b>showFrase4For</b> muestra la cadena usando el ciclo for C04: Pedir una frase y una letra, eliminar la letra ingresada de la frase. 
+     * <b>showFrase1</b> muestra el número de vocales de una cadena C01) Pedir una frase y contador las vocales. 
+     * @author: David Unaucho
+     * @param frase: frase para contar las vocales 
+     * @return Integer
+     * showFrase1
+     */
+    public  int showFrase1(String frase) {
+        int contador = 0;
+        int vocalesA = 0, vocalesE = 0, vocalesI = 0, vocalesO = 0, vocalesU = 0;
+        for (int i = 0; i < frase.length(); i++) {
+            char caracter = frase.charAt(i);
+            switch (caracter) {
+                case 'a':
+                    vocalesA++;
+                    contador++;
+                    break;
+                case 'e':
+                    vocalesE++;
+                    contador++;
+                    break;
+                case 'i':
+                    vocalesI++;
+                    contador++;
+                    break;
+                case 'o':
+                    vocalesO++;
+                    contador++;
+                    break;
+                case 'u':
+                    vocalesU++;
+                    contador++;
+                    break;
+                default:
+                    // Ignorar otros caracteres
+                    break;
+            }
+        }
+        // Imprimir el contador de cada vocal
+        System.out.println("Vocal A: " + vocalesA);
+        System.out.println("Vocal E: " + vocalesE);
+        System.out.println("Vocal I: " + vocalesI);
+        System.out.println("Vocal O: " + vocalesO);
+        System.out.println("Vocal U: " + vocalesU);
+        return contador;
+    }
+     /**
+     * <b>showFrase2For</b> muestra el número de letras de una cadena usando el ciclo for C02) Pedir una frase y contador las letras. 
+     * @author: David Unaucho
+     * @param frase: frase para contar las letras 
+     * @return Integer
+     * showFrase2For
+     */
+    public  int showFrase2For(String frase) {
+        int contador = 0;
+        for (int i = 0; i < frase.length(); i++) {
+            char caracter = frase.charAt(i);
+            if (Character.isLetter(caracter)) {
+                contador++;
+            }
+        }
+        return contador;
+    }
+     /**
+     * <b>showFrase4For</b> muestra la cadena usando el ciclo for C04: Pedir una frase y una letra, eliminar la letra ingresada de la frase.
+     * @author: Mateo Simbaña
      * @param frase: frase para eliminar la letra que el usuario escoja
      * @param letra: letra que se eliminará en la frase
      * showFrase4For
@@ -17,6 +81,7 @@ public class CadenasCaracteres {
     }   
     /**
      * <b>showFrase5For</b> muestra la cadena usando el ciclo for C05: Pedir una frase y presentar la invertida con las vocales en mayusculas. 
+     * @author: Mateo Simbaña
      * @param frase: frase para invertir con las vocales en mayúsculas
      * showFrase5For
      */
@@ -35,6 +100,7 @@ public class CadenasCaracteres {
     }
     /**
      * <b>showFrase6For</b> muestra la cadena usando el ciclo for C06: Pedir una frase y presentar la invertida con las letras en mayusculas. 
+     * @author: Mateo Simbaña
      * @param frase: frase para invertir con las letras en mayúsculas
      * showFrase6For
      */
@@ -53,7 +119,8 @@ public class CadenasCaracteres {
     }
     /**
      * <b>showFrase7For</b> muestra la cadena usando el ciclo foreach C07: Pedir una frase y presentarla en mayusculas y sin la J.
-     * @param frase: frase en mayúsculas y sin la J.
+     * @author: Mateo Simbaña
+     * @param frase: frase para presentarla en mayúsculas y sin la J 
      * showFrase7For
      */
     public void showFrase7For (String frase){
@@ -67,6 +134,7 @@ public class CadenasCaracteres {
     } 
     /**
      * <b>showFrase9For</b> muestra la cadena usando el ciclo for C09: Ingresa una frase y convertir una letra a mayusculas y otra a minisculas 
+     * @author: Mateo Simbaña
      * @param frase: frase para convertir una letra en mayúscula y otra en minúscula
      * showFrase9For
      */

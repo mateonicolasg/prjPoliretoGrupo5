@@ -24,11 +24,7 @@ public class showArrays {
             System.out.println(App.CYAN + "4." + App.RESET+ " Array " + App.CYAN + "[4]" + App.RESET);
             System.out.println(App.CYAN + "5." + App.RESET + " Array " + App.CYAN + "[5]" + App.RESET);
             System.out.println(App.RED + "0. Salir" + App.RESET);
-            System.out.print(App.WHITE + "Ingresa una opción: " + App.RESET);
-
-            
-            opcion = App.sc.nextInt();
-
+            opcion = oControlDatos.getPositiveOp();
             switch(opcion){
                 case 1:
                     
@@ -37,12 +33,12 @@ public class showArrays {
                     System.out.println("Array 2 ");
                     tamaño = oControlDatos.getPositiveLevel();
                     App.sc.nextLine();
-                    System.out.print("Ingrese un caracter: ");
-                    char caracter = App.sc.next().charAt(0);
-                   oArray.Array2(tamaño, caracter);
+                    char caracter = oControlDatos.getCaracter();
+                    oArray.Array2(tamaño, caracter);
                     break;
                 case 3:
-
+                    System.out.println("Array 3");
+                    oArray.Array3();
                     break;
                 case 4:
 

@@ -6,6 +6,7 @@
 public class showLoadings {
     Loadings oLoadings = new Loadings();
     App oApp = new App();
+    ControlDatos oControlDatos = new ControlDatos();
     
     // String frase;
     int opcion;
@@ -17,19 +18,16 @@ public class showLoadings {
         do{     
             System.out.println();
             System.out.println(App.WHITE + "MENÚ LOADINGS"+ App.RESET);
-            System.out.println(App.WHITE + "1." + App.RESET + " Loading" + App.WHITE + " [1]" + App.RESET);
-            System.out.println(App.WHITE + "2." + App.RESET + " Loading " + App.WHITE + "[2]" + App.RESET);
-            System.out.println(App.WHITE + "3." + App.RESET+ " Loading " + App.WHITE + "[3]" + App.RESET);
-            System.out.println(App.WHITE + "4." + App.RESET+ " Loading " + App.WHITE + "[4]" + App.RESET);
-            System.out.println(App.WHITE + "5." + App.RESET + " Loading " + App.WHITE + "[5]" + App.RESET);
-            System.out.println(App.WHITE + "6." + App.RESET + " Loading " + App.WHITE + "[6]" + App.RESET);
-            System.out.println(App.WHITE + "7." + App.RESET + " Loading " + App.WHITE + "[7]" + App.RESET);
+            System.out.println(App.WHITE + "1. " + App.RESET + " Loading" + App.WHITE + " [1]" + App.RESET);
+            System.out.println(App.WHITE + "2. " + App.RESET + " Loading " + App.WHITE + "[2]" + App.RESET);
+            System.out.println(App.WHITE + "3. " + App.RESET+ " Loading " + App.WHITE + "[3]" + App.RESET);
+            System.out.println(App.WHITE + "4. " + App.RESET+ " Loading " + App.WHITE + "[4]" + App.RESET);
+            System.out.println(App.WHITE + "5. " + App.RESET + " Loading " + App.WHITE + "[5]" + App.RESET);
+            System.out.println(App.WHITE + "6. " + App.RESET + " Loading " + App.WHITE + "[6]" + App.RESET);
+            System.out.println(App.WHITE + "7. " + App.RESET + " Loading " + App.WHITE + "[7]" + App.RESET);
+            System.out.println(App.WHITE + "10." + App.RESET + " Loading " + App.WHITE + "[10]" + App.RESET);
             System.out.println(App.RED + "0. Salir" + App.RESET);
-            System.out.print(App.CYAN + "Ingresa una opción: " + App.RESET);
-
-            
-            opcion = App.sc.nextInt();
-
+            opcion = oControlDatos.getPositiveOp();
             switch(opcion){
                 case 1:
                     System.out.println("Loading 1 ");
@@ -59,6 +57,10 @@ public class showLoadings {
                 case 7:
                     System.out.println("Loading 7");
                     oLoadings.showLoading7();
+                    break;
+                case 10:
+                    System.out.println("Loading 10");
+                    oLoadings.showLoading10();
                     break;
                 case 0:
                     System.out.println();

@@ -18,23 +18,32 @@ public class showCadenasCaracteres {
         do{     
             System.out.println();
             System.out.println(App.PURPLE + "MENÚ CADENAS CARACTERES" + App.RESET);
+            System.out.println(App.PURPLE + "1." + App.RESET + " Cadena de caracteres" + App.PURPLE + " [1]"+ App.RESET);
+            System.out.println(App.PURPLE + "2." + App.RESET + " Cadena de caracteres" + App.PURPLE + " [2]"+ App.RESET);
             System.out.println(App.PURPLE + "4." + App.RESET + " Cadena de caracteres" + App.PURPLE + " [4]"+ App.RESET);
             System.out.println(App.PURPLE + "5." + App.RESET + " Cadena de caracteres" + App.PURPLE + " [5]"+ App.RESET);
             System.out.println(App.PURPLE + "6." + App.RESET + " Cadena de caracteres" + App.PURPLE + " [6]"+ App.RESET);
             System.out.println(App.PURPLE + "7." + App.RESET  + " Cadena de caracteres" + App.PURPLE + " [7]"+ App.RESET);
             System.out.println(App.PURPLE + "9." + App.RESET + " Cadena de caracteres" + App.PURPLE + " [9]"+ App.RESET);
             System.out.println(App.RED + "0. Salir" + App.RESET);
-            System.out.print(App.WHITE + "Ingresa una opción: " + App.RESET);
-
-            
-            opcion = App.sc.nextInt();
-
+            opcion = oControlDatos.getPositiveOp();
             switch(opcion){
+                case 1:
+                    App.sc.nextLine();
+                    frase = oControlDatos.leerFrase(); 
+                    int contadorVocales = oCadenasCaracteres.showFrase1(frase);
+                    System.out.println("La frase tiene " + contadorVocales + " vocales.");
+                    break;
+                case 2:
+                    App.sc.nextLine();
+                    frase = oControlDatos.leerFrase(); 
+                    int contadorLetras = oCadenasCaracteres.showFrase2For(frase);
+                    System.out.println("La frase tiene " + contadorLetras + " letras.");
+                    break;
                 case 4:
                     App.sc.nextLine();
                     frase = oControlDatos.leerFrase(); 
-                    System.out.print("Letra a eliminar de esa frase: ");
-                    char letra = App.sc.next().charAt(0);
+                    char letra = oControlDatos.getLetraValida(frase);
                     oCadenasCaracteres.showFrase4For(frase,letra);
                     break;
                 case 5:

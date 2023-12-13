@@ -18,28 +18,37 @@ public class showFiguras {
         do{     
             System.out.println();
             System.out.println(App.BLUE + "MENÚ FIGURAS" + App.RESET);
+            System.out.println(App.BLUE + "1.  " + App.RESET + "Figura " + App.BLUE + "[1]" + App.RESET);
+            System.out.println(App.BLUE + "2.  " + App.RESET + "Figura " + App.BLUE + "[2]" + App.RESET);
             System.out.println(App.BLUE + "3.  " + App.RESET + "Figura " + App.BLUE + "[3]" + App.RESET);
             System.out.println(App.BLUE + "4.  "+ App.RESET + "Figura " + App.BLUE + "[4]"+ App.RESET);
             System.out.println(App.BLUE + "5.  "+ App.RESET + "Figura " + App.BLUE + "[5]" + App.RESET);
             System.out.println(App.BLUE + "6.  "+ App.RESET + "Figura " + App.BLUE + "[6]" + App.RESET);
+            System.out.println(App.BLUE + "7.  "+ App.RESET + "Figura " + App.BLUE + "[7]" + App.RESET);
+            System.out.println(App.BLUE + "8.  "+ App.RESET + "Figura " + App.BLUE + "[8]" + App.RESET);
             System.out.println(App.BLUE + "9.  "+ App.RESET + "Figura " + App.BLUE + "[9]" + App.RESET);
-            System.out.println(App.BLUE + "10.  "+ App.RESET + "Figura " + App.BLUE + "[10]" + App.RESET);
-            System.out.println(App.BLUE + "11.  "+ App.RESET + "Figura " + App.BLUE + "[11]" + App.RESET);
+            System.out.println(App.BLUE + "10. "+ App.RESET + "Figura " + App.BLUE + "[10]" + App.RESET);
+            System.out.println(App.BLUE + "11. "+ App.RESET + "Figura " + App.BLUE + "[11]" + App.RESET);
+            System.out.println(App.BLUE + "12. "+ App.RESET + "Figura " + App.BLUE + "[12]" + App.RESET);
+            System.out.println(App.BLUE + "13. "+ App.RESET + "Figura " + App.BLUE + "[13]" + App.RESET);
             System.out.println(App.BLUE + "16. "+ App.RESET + "Figura " + App.BLUE + "[16]" + App.RESET);
             System.out.println(App.BLUE + "17. "+ App.RESET + "Figura " + App.BLUE + "[17]" + App.RESET);
             System.out.println(App.BLUE + "18. "+ App.RESET + "Figura " + App.BLUE + "[18]" + App.RESET);
             System.out.println(App.BLUE + "19. "+ App.RESET + "Figura " + App.BLUE + "[19]" + App.RESET);
-            System.out.println(App.RED +"0. Salir");
-            System.out.print(App.WHITE  +"Ingresa una opción: " + App.RESET);
-
-            
-            opcion = App.sc.nextInt();
-
+            System.out.println(App.RED +"0. Salir" + App.RESET);
+            opcion = oControlDatos.getPositiveOp();
             switch(opcion){
+                case 1:
+                    nroNiveles = oControlDatos.getPositiveLevel();
+                    oFigura.showFigura1For(nroNiveles);
+                    break;
+                case 2:
+                    nroNiveles = oControlDatos.getPositiveLevel();
+                    oFigura.showFigura2For(nroNiveles);
+                    break;
                 case 3:
                     nroNiveles = oControlDatos.getPositiveLevel();
                     oFigura.showFigura3For(nroNiveles);
-                    
                     break;
                 case 4:    
                     nroNiveles = oControlDatos.getPositiveLevel();   
@@ -53,6 +62,14 @@ public class showFiguras {
                     nroNiveles = oControlDatos.getPositiveLevel();
                     oFigura.showFigura6For(nroNiveles);
                     break;
+                case 7:
+                    nroNiveles = oControlDatos.getPositiveLevel();
+                    oFigura.showFigura7For(nroNiveles);
+                    break;
+                case 8:
+                    nroNiveles = oControlDatos.getPositiveLevel();
+                    oFigura.showFigura8For(nroNiveles);
+                    break;
                 case 9:
                     nroNiveles = oControlDatos.getPositiveLevel();
                     oFigura.showFigura9For(nroNiveles);
@@ -64,6 +81,14 @@ public class showFiguras {
                 case 11:
                     nroNiveles = oControlDatos.getPositiveLevel();
                     oFigura.showFigura11For(nroNiveles);
+                    break;
+                case 12:
+                    nroNiveles = oControlDatos.getPositiveLevel();
+                    oFigura.showFigura12For(nroNiveles);
+                    break;
+                case 13:
+                    nroNiveles = oControlDatos.getPositiveLevel();
+                    oFigura.showFigura13For(nroNiveles);
                     break;
                 case 16:
                     nroNiveles = oControlDatos.getPositiveLevel();

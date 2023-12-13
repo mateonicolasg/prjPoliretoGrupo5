@@ -5,6 +5,7 @@
  */
 public class showEjerciciosRecursion {
     EjerciciosRecursion oEjerciciosRecursion = new EjerciciosRecursion();
+    ControlDatos oControlDatos = new ControlDatos();
     App oApp = new App();
     
     int a, b;
@@ -24,39 +25,34 @@ public class showEjerciciosRecursion {
             System.out.println(App.YELLOW2 + "5." + App.RESET + " Conteo progresivo hasta (n)");
             System.out.println(App.YELLOW2 + "6." + App.RESET + " conteo regresivo(n) hasta 0");
             System.out.println(App.RED +"0. Salir" + App.RESET);
-            System.out.print(App.WHITE +"Ingresa una opción: " + App.RESET);
-
-            
-            opcion = App.sc.nextInt();
-
+            opcion = oControlDatos.getPositiveOp();
             switch(opcion){
                 case 2:
-                    System.out.print("Introduce el valor de a: ");
-                    a = App.sc.nextInt();
-                    System.out.print("Introduce el valor de b: ");
-                    b = App.sc.nextInt();   
+                    System.out.println(App.CYAN + "Primer sumando" + App.RESET);
+                    a = oControlDatos.getPositiveValor();
+                    System.out.println(App.CYAN +"Segundo sumando" + App.RESET);
+                    b = oControlDatos.getPositiveValor();
                     System.out.println();  
-                    System.out.print("El resultado es: " + oEjerciciosRecursion.sumaRecursiva(a, b));
+                    System.out.print("El resultado de " + a + " + " + b + " es: " + oEjerciciosRecursion.sumaRecursiva(a, b));
                     break;
                 case 3:
-                    System.out.print("Introduce el valor de a: ");
-                    a = App.sc.nextInt();
-                    System.out.print("Introduce el valor de b: ");
-                    b = App.sc.nextInt();
+                    System.out.println(App.CYAN +"Primer factor" + App.RESET);
+                    a = oControlDatos.getPositiveValor();
+                    System.out.println(App.CYAN +"Segundo factor" + App.RESET);
+                    b = oControlDatos.getPositiveValor();
                     System.out.println();     
-                    System.out.print("El resultado es: " + oEjerciciosRecursion.multiplicacionRecursiva(a, b));   
+                    System.out.print("El resultado de " + a + " * " + b + " es: " + oEjerciciosRecursion.sumaRecursiva(a, b));   
                     break;
                 case 4:
-                    System.out.print("Introduce el valor de a: ");
-                    a = App.sc.nextInt();
-                    System.out.print("Introduce el valor de b: ");
-                    b = App.sc.nextInt();
+                    System.out.println(App.CYAN +"Base" + App.RESET);
+                    a = oControlDatos.getPositiveValor();
+                    System.out.println(App.CYAN +"Exponente" + App.RESET);
+                    b = oControlDatos.getPositiveValor();
                     System.out.println();     
-                    System.out.print("El resultado es: " + oEjerciciosRecursion.potenciaRecursiva(a, b));
+                    System.out.print("El resultado de " + a + " elevado a la " + b + " es: " + oEjerciciosRecursion.sumaRecursiva(a, b)); 
                     break;
                 case 5:
-                    System.out.print("Introduce un número: ");
-                    b = App.sc.nextInt();
+                    b = oControlDatos.getPositiveValor();
                     System.out.println("Conteo progresivo hasta "+ b );     
                     oEjerciciosRecursion.conteoProgresivoRecursivo(1, b);
                     break;

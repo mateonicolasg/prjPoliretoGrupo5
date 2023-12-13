@@ -28,6 +28,7 @@ public class App {
         showArrays oArrays = new showArrays();
         showLoadings oLoadings = new showLoadings();
         showEjerciciosRecursion oEjerciciosRecursion = new showEjerciciosRecursion();
+        ControlDatos oControlDatos = new ControlDatos();
         int opcion;
         System.out.println(RED + "***BIENVENIDO A LOS POLIRETOS***" + RESET);
 
@@ -42,8 +43,7 @@ public class App {
             System.out.println(WHITE + "6. Loading" + RESET);
             System.out.println(YELLOW2 + "7. Recursión" + RESET);
             System.out.println(RED + "0. Salir" + RESET);
-            System.out.print("Ingresa una opción: ");
-            opcion = sc.nextInt();
+            opcion = oControlDatos.getPositiveOp();
             switch(opcion){
                 case 1:
                     oShowSeriesNumeros.showMenu1();

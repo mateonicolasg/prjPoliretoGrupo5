@@ -8,6 +8,7 @@ public class EjerciciosRecursion {
      * <b>sumaRecursiva</b> muestra una recursividad para R02: Crear un metodo recursivo para obtener la suma(a,b).
      * @param num1: Primer sumando
      * @param num1: Segundo sumando
+     * @return: Integer
      * sumaRecursiva 
      */
     public int sumaRecursiva(int num1, int num2){
@@ -22,6 +23,7 @@ public class EjerciciosRecursion {
      * <b>multiplicacionRecursiva</b> muestra una recursividad para R03) crear un metodo recursivo para obtener la multiplicacion(a,b)
      * @param a: Primer factor
      * @param b: Segundo factor
+     * @return: Integer
      * multiplicacionRecursiva 
      */
     public int multiplicacionRecursiva(int a, int b) {
@@ -35,6 +37,7 @@ public class EjerciciosRecursion {
      * <b>potenciaRecursiva</b> muestra una recursividad para R04) crear un metodo recursivo para obtener la potencia(a,b)
      * @param base: Número inicial
      * @param exponente: Potencia a la cual se eleva el número inicial
+     * @return: Integer
      * potenciaRecursiva 
      */
     public int potenciaRecursiva(int base, int exponente) {

@@ -26,11 +26,7 @@ public class showSeriesNumeros {
             System.out.println(App.GREEN + "10. " + App.RESET + "Serie de números " + App.GREEN + "[10]" + App.RESET);
             System.out.println(App.GREEN + "12. " + App.RESET + "Serie de números " + App.GREEN + "[12]" + App.RESET);
             System.out.println(App.RED + "0. Salir" + App.RESET);
-            System.out.print(App.WHITE + "Ingresa una opción: " + App.RESET);
-
-            
-            opcion = App.sc.nextInt();
-
+            opcion = oControlDatos.getPositiveOp();
             switch(opcion){
                 case 1:  
                     nroTerminos = oControlDatos.getPositiveNum();  
