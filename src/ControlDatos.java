@@ -24,36 +24,6 @@ public class ControlDatos {
                 caracter = comprobarCaracter.charAt(0);
             }
         }
-
-        // char caracter;
-        // boolean encontrado = false;
-        // System.out.print("Letra a eliminar de la frase: ");
-        // caracter = App.sc.next().charAt(0);
-        // while (!(Character.isLetter(caracter))){
-        //     System.out.println(App.RED + "Ingrese una letra valida!" + App.RESET);
-        //     System.out.print("Letra a eliminar de esa frase: ");
-        //     caracter = App.sc.next().charAt(0);
-        // }
-
-        // for (char c1 : frase.toCharArray()){       
-        //     if (caracter == c1)
-        //         encontrado = true;
-        // }
-        // while (!encontrado){
-        //     System.out.println(App.RED + "Letra no encontrada!" + App.RESET);
-        //     System.out.println(App.CYAN + "Ingrese una letra que se encuentre en la frase..." + App.RESET);
-        //     System.out.print("Letra a eliminar de la frase: ");
-        //     caracter = App.sc.next().charAt(0);
-        //     while (!(Character.isLetter(caracter)) && caracter == 'a' && caracter == 'e' && caracter == 'i' && caracter == 'o' && caracter == 'u'){
-        //         System.out.println(App.RED + "Ingrese una letra valida!" + App.RESET);
-        //         System.out.print("Letra a eliminar de esa frase: ");
-        //         caracter = App.sc.next().charAt(0);
-        //     }
-        //     for (char c1 : frase.toCharArray()){       
-        //         if (caracter == c1)
-        //             encontrado = true;
-        //     }
-        // }
         return caracter;
     }
     /**
@@ -65,9 +35,10 @@ public class ControlDatos {
         boolean vocalEncontrada = false;
         while (!vocalEncontrada) {
             System.out.print("Ingrese una vocal: ");
-            String comprobarLetra = App.sc.nextLine();
-            if (comprobarLetra.length() == 1 && Character.isAlphabetic(comprobarLetra.charAt(0))) {
-                caracter = Character.toLowerCase(comprobarLetra.charAt(0));
+            String comprobarVocal = App.sc.nextLine();
+            if (comprobarVocal.length() == 1 && (Character.toLowerCase(comprobarVocal.charAt(0)) == 'a' ||Character.toLowerCase(comprobarVocal.charAt(0)) == 'e' || 
+                Character.toLowerCase(comprobarVocal.charAt(0)) == 'i' || Character.toLowerCase(comprobarVocal.charAt(0)) == 'o' || Character.toLowerCase(comprobarVocal.charAt(0)) == 'u')) {
+                caracter = comprobarVocal.charAt(0);
                     for (char c : frase.toCharArray()){       
                         if (caracter == c) {
                             vocalEncontrada = true;
@@ -94,9 +65,9 @@ public class ControlDatos {
             System.out.print("Ingrese una letra: ");
             String comprobarLetra = App.sc.nextLine();
             if (comprobarLetra.length() == 1 && Character.isLetter(comprobarLetra.charAt(0))) {
-                caracter = Character.toLowerCase(comprobarLetra.charAt(0));
-                if (caracter != 'a' && caracter != 'e' && caracter != 'i' &&
-                caracter != 'o' && caracter != 'u') {
+                caracter = comprobarLetra.charAt(0);
+                if (Character.toLowerCase(caracter) != 'a' && Character.toLowerCase(caracter) != 'e' && Character.toLowerCase(caracter) != 'i' &&
+                Character.toLowerCase(caracter) != 'o' && Character.toLowerCase(caracter) != 'u') {
                     for (char c : frase.toCharArray()){       
                         if (caracter == c) {
                             letraEncontrada = true;
