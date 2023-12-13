@@ -57,6 +57,33 @@ public class ControlDatos {
         return caracter;
     }
     /**
+     * Verificar si es que el caracter ingresado es una vocal y si esa vocal existe en la frase
+     * @return Character
+     */
+    public char getvocalValida(String frase){
+        char caracter = ' ';
+        boolean vocalEncontrada = false;
+        while (!vocalEncontrada) {
+            System.out.print("Ingrese una vocal: ");
+            String comprobarLetra = App.sc.nextLine();
+            if (comprobarLetra.length() == 1 && Character.isAlphabetic(comprobarLetra.charAt(0))) {
+                caracter = Character.toLowerCase(comprobarLetra.charAt(0));
+                    for (char c : frase.toCharArray()){       
+                        if (caracter == c) {
+                            vocalEncontrada = true;
+                        }
+                    }
+                    if (vocalEncontrada == false){
+                        System.out.println(App.RED + "No se encontró la vocal en la frase" + App.RESET);
+                    }
+            }
+            else {
+                System.out.println(App.RED + "Ingrese una vocal válida." + App.RESET);
+            }
+        }
+        return caracter;
+    }
+    /**
      * Verificar si es que el caracter ingresado es una letra y si esa letra existe en la frase
      * @return Character
      */

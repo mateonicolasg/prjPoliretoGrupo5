@@ -38,6 +38,23 @@ public class CadenasCaracteres {
         System.out.println("La frase tiene " + contador + " letras.");
     }
      /**
+     * <b>showFrase3For</b> muestra la cadena usando el ciclo for C03: Pedir una frase y una vocal, eliminar la vocal ingresada de la frase.
+     * @author: Edison Vera
+     * @param frase: frase para eliminar la letra que el usuario escoja
+     * @param letra: letra que se eliminará en la frase
+     * showFrase3For
+     */
+    public void showFrase3For (String frase, char letra){
+        for (int i = 0; i < frase.length(); i++) {
+            if(frase.charAt(i) == letra){
+                System.out.print(" ");
+            }
+            else{
+                System.out.print(frase.charAt(i));
+            }
+        }
+    }
+     /**
      * <b>showFrase4For</b> muestra la cadena usando el ciclo for C04: Pedir una frase y una letra, eliminar la letra ingresada de la frase.
      * @author: Mateo Simbaña
      * @param frase: frase para eliminar la letra que el usuario escoja

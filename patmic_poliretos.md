@@ -48,11 +48,6 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             ....
 
 >> Cadena de caracteres:
-
-	C03)    Pedir una frase y una vocal, eliminar la vocal ingresada de la frase. 
-            Ejemplo, frase: ballena azul  
-                    vocal : a                           Edison Vera
-                    salida: b ll n   z l
 	
 	C08)    Anagramas de palabras. 
             Se forman cuando se utilizan todas las letras de una palabra pero modificando el orden.
@@ -85,17 +80,6 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
             2 |    a                            Edison Vera
             1 |  p
             0 |______________________
-            
-    A04)    Crear un matriz donde forme una X con su nombre y apellido
-
-            P                           P
-                a                   a
-                    t           c
-                        r   c
-                        h   i                   Estefano Santacruz
-                    a           c
-                                    i
-                                        o
 
 
 >> Loading, Usar el delay para animar      
@@ -109,8 +93,5 @@ Es hora de saber hasta donde puedes llegar, para lo cual debes cumplir con:
 		        o       	50%                         Estefano Santacruz
 		               a    100%
 
->> Recursion
-    R01) crear un metodo recursivo para obtener factorial(n)  Edison Vera   
-    R06) crear un metodo recursivo para obtener la conteoRegresivo(n)  hasta 0 / imprimir el avance     Estefano Santacruz
-    
+>> Recursion   
     Extra si usa memoria retenida en la recursiones 

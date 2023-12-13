@@ -20,6 +20,7 @@ public class showCadenasCaracteres {
             System.out.println(App.PURPLE + "MENÚ CADENAS CARACTERES" + App.RESET);
             System.out.println(App.PURPLE + "1." + App.RESET + " Cadena de caracteres" + App.PURPLE + " [1]"+ App.RESET);
             System.out.println(App.PURPLE + "2." + App.RESET + " Cadena de caracteres" + App.PURPLE + " [2]"+ App.RESET);
+            System.out.println(App.PURPLE + "3." + App.RESET + " Cadena de caracteres" + App.PURPLE + " [3]"+ App.RESET);
             System.out.println(App.PURPLE + "4." + App.RESET + " Cadena de caracteres" + App.PURPLE + " [4]"+ App.RESET);
             System.out.println(App.PURPLE + "5." + App.RESET + " Cadena de caracteres" + App.PURPLE + " [5]"+ App.RESET);
             System.out.println(App.PURPLE + "6." + App.RESET + " Cadena de caracteres" + App.PURPLE + " [6]"+ App.RESET);
@@ -37,6 +38,12 @@ public class showCadenasCaracteres {
                     App.sc.nextLine();
                     frase = oControlDatos.leerFrase(); 
                     oCadenasCaracteres.showFrase2For(frase);
+                    break;
+                case 3:
+                    App.sc.nextLine();
+                    frase = oControlDatos.leerFrase(); 
+                    char vocal = oControlDatos.getvocalValida(frase);
+                    oCadenasCaracteres.showFrase3For(frase,vocal);
                     break;
                 case 4:
                     App.sc.nextLine();

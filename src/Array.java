@@ -1,4 +1,22 @@
 public class Array {
+    public void Array1() {
+        String[] palabras = {"David Nicolas Unaucho Guarnizo"};
+        // int cantidadPalabras = palabras.length;
+
+        // int porcentajeBase = 100 / cantidadPalabras;
+        int porcentaje = 25; // Empezamos con 25%
+
+        System.out.println("\n");
+        for (int i = 0; i < palabras.length; i++) {
+            int longitud = palabras[i].length();
+            int cargaReal = (porcentaje * longitud) / 100;
+
+            String cargaVisual = "[" + "=".repeat(cargaReal) + ">".repeat(longitud - cargaReal) + "]";
+            
+            System.out.printf("%s %3d%% %s%n", cargaVisual, porcentaje, palabras[i].substring(0, cargaReal));
+            porcentaje += 25; // Incrementamos el porcentaje en 25 para la siguiente palabra
+        }
+    }
     /**
      * <b>Array2</b> muestra la serie usando el ciclo for A02) Crear una matriz solicitando el tamaño y caracter para almacenar la iniciales de su nombre y apellido y presentar la matriz
      * @author: Mateo Simbaña
@@ -81,6 +99,37 @@ public class Array {
             System.out.print((char)guion);
         }
         System.out.println();
+    }
+    /**
+     * <b>Array4</b> muestra la serie A04) Crear un matriz donde forme una X con su nombre y apellido
+     * @author: Estefano Santacruz
+     * Array4
+     */
+    public void Array4() {
+        String nombre = "Estefano";
+        String apellido = "Santacruz";
+        int tamañoMatriz = Math.max(nombre.length(), apellido.length()) * 1 + 1;
+
+        char[][] matriz = new char[tamañoMatriz][tamañoMatriz];
+        for (int i = 0; i < tamañoMatriz; i++) {
+            for (int j = 0; j < tamañoMatriz; j++) {
+                matriz[i][j] = ' ';
+            }
+        }
+        for (int i = 0; i < nombre.length(); i++) {
+            matriz[i][i] = nombre.charAt(i);
+        }
+
+        for (int i = 0; i < apellido.length(); i++) {
+            matriz[i][tamañoMatriz - i - 1] = apellido.charAt(i);
+        }
+
+        for (int i = 0; i < tamañoMatriz; i++) {
+            for (int j = 0; j < tamañoMatriz; j++) {
+                System.out.print(matriz[i][j] + " ");
+            }
+            System.out.println();
+        }
     }
     /**
      * <b>Array5</b> muestra la serie usando el ciclo foreach A05) Crear un matriz cuadrada del tamaño de su nombre, colocar cada letra de sus nombres completos de forma randomica/aleatorio.

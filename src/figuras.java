@@ -348,6 +348,77 @@ public class Figuras {
         }
     }
     /**
+     * <b>showFigura14For</b> muestra la figura usando el ciclo for F14:	
+                        1
+                      1    1
+                    1    2    1
+                  1    3    3    1
+               1    4    6    4    1            
+             1   5   10    10    5   1
+     * @author: Estefano Santacruz
+     * @param nroNiveles: numero de niveles para la figura
+     * showFigura14For
+     */  
+    public void showFigura14For(int nroNiveles) {
+        for (int i = 0; i < nroNiveles; i++) {
+            imprimirEspacios(nroNiveles - i - 1);
+            imprimirCoeficientes(i);
+            System.out.println();
+        }
+    }
+
+    public void imprimirEspacios(int numEspacios) {
+        for (int i = 0; i < numEspacios; i++) {
+            System.out.print("  ");
+        }
+    }
+
+    public void imprimirCoeficientes(int nroNiveles) {
+        for (int i = 0; i <= nroNiveles; i++) {
+            System.out.print(calcularCoeficiente(nroNiveles, i) + " ");
+        }
+    }
+
+    public int calcularCoeficiente(int n, int k) {
+        if (k == 0 || k == n) {
+            return 1;
+        } else {
+            return calcularCoeficiente(n - 1, k - 1) + calcularCoeficiente(n - 1, k);
+        }
+    }
+   /**
+     * <b>showFigura15For</b> muestra la figura usando el ciclo for F14:	
+            1
+            1	1
+            1	2	1
+            1   3   3    1                      
+            1   4   6    4    1
+            1   5   10   10   5   1
+     * @author: Estefano Santacruz
+     * @param nroNiveles: numero de niveles para la figura
+     * showFigura15For
+     */     
+    public void showFigura15For(int nroNiveles) {
+        for (int i = 0; i < nroNiveles; i++) {
+            imprimirCoeficientes1(i);
+            System.out.println();
+        }
+    }
+
+    public void imprimirCoeficientes1(int rowNum) {
+        for (int i = 0; i <= rowNum; i++) {
+            System.out.print(calcularCoeficiente1(rowNum, i) + " ");
+        }
+    }
+
+    public int calcularCoeficiente1(int n, int k) {
+        if (k == 0 || k == n) {
+            return 1;
+        } else {
+            return calcularCoeficiente1(n - 1, k - 1) + calcularCoeficiente1(n - 1, k);
+        }
+    }
+    /**
      * <b>showFigura16For</b> muestra la figura usando el ciclo for F16:
             +				+
                 -		-

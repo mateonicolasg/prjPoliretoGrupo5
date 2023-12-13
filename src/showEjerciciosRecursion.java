@@ -27,6 +27,12 @@ public class showEjerciciosRecursion {
             System.out.println(App.RED +"0. Salir" + App.RESET);
             opcion = oControlDatos.getPositiveOp();
             switch(opcion){
+                case 1:
+                    System.out.println(App.CYAN + "Ingrese un número para calcular su factorial: " + App.RESET);
+                    a = oControlDatos.getPositiveValor();
+                    System.out.println();  
+                    System.out.print("El factorial de " + a + " es: " + oEjerciciosRecursion.calcularFactorial(a));
+                    break;
                 case 2:
                     System.out.println(App.CYAN + "Primer sumando" + App.RESET);
                     a = oControlDatos.getPositiveValor();
@@ -55,6 +61,11 @@ public class showEjerciciosRecursion {
                     b = oControlDatos.getPositiveValor();
                     System.out.println("Conteo progresivo hasta "+ b );     
                     oEjerciciosRecursion.conteoProgresivoRecursivo(1, b);
+                    break;
+                case 6:
+                    b = oControlDatos.getPositiveValor();
+                    System.out.println("Conteo regresivo");     
+                    oEjerciciosRecursion.conteoRegresivoRecursivo(b);
                     break;
                 case 0:
                     System.out.println();

@@ -27,7 +27,8 @@ public class showArrays {
             opcion = oControlDatos.getPositiveOp();
             switch(opcion){
                 case 1:
-                    
+                    System.out.println("Array 3");
+                    oArray.Array1();
                     break;
                 case 2:
                     System.out.println("Array 2 ");
@@ -41,7 +42,8 @@ public class showArrays {
                     oArray.Array3();
                     break;
                 case 4:
-
+                    System.out.println("Array 4");
+                    oArray.Array4();
                     break;
                 case 5:
                     System.out.println("Array 5");

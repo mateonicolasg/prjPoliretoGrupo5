@@ -31,6 +31,8 @@ public class showFiguras {
             System.out.println(App.BLUE + "11. "+ App.RESET + "Figura " + App.BLUE + "[11]" + App.RESET);
             System.out.println(App.BLUE + "12. "+ App.RESET + "Figura " + App.BLUE + "[12]" + App.RESET);
             System.out.println(App.BLUE + "13. "+ App.RESET + "Figura " + App.BLUE + "[13]" + App.RESET);
+            System.out.println(App.BLUE + "14. "+ App.RESET + "Figura " + App.BLUE + "[14]" + App.RESET);
+            System.out.println(App.BLUE + "15. "+ App.RESET + "Figura " + App.BLUE + "[15]" + App.RESET);
             System.out.println(App.BLUE + "16. "+ App.RESET + "Figura " + App.BLUE + "[16]" + App.RESET);
             System.out.println(App.BLUE + "17. "+ App.RESET + "Figura " + App.BLUE + "[17]" + App.RESET);
             System.out.println(App.BLUE + "18. "+ App.RESET + "Figura " + App.BLUE + "[18]" + App.RESET);
@@ -89,6 +91,14 @@ public class showFiguras {
                 case 13:
                     nroNiveles = oControlDatos.getPositiveLevel();
                     oFigura.showFigura13For(nroNiveles);
+                    break;
+                case 14:
+                    nroNiveles = oControlDatos.getPositiveLevel();
+                    oFigura.showFigura14For(nroNiveles);
+                    break;
+                case 15:
+                    nroNiveles = oControlDatos.getPositiveLevel();
+                    oFigura.showFigura15For(nroNiveles);
                     break;
                 case 16:
                     nroNiveles = oControlDatos.getPositiveLevel();
