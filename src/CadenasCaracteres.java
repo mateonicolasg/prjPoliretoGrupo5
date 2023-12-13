@@ -133,7 +133,7 @@ public class CadenasCaracteres {
             if (i % 2 == 0)
                 System.out.print(Character.toUpperCase(fraseCaracteres[i]));
             else 
-                System.out.print(fraseCaracteres[i]);
+                System.out.print(Character.toLowerCase(fraseCaracteres[i]));
         }
     }
 }
